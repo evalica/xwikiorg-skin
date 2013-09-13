@@ -3170,7 +3170,7 @@
       <authenticate_view>0</authenticate_view>
     </property>
     <property>
-      <colorTheme>ColorThemes.MainCT</colorTheme>
+      <colorTheme>ColorThemes.Blueberry</colorTheme>
     </property>
     <property>
       <comment_anonymous>---</comment_anonymous>
