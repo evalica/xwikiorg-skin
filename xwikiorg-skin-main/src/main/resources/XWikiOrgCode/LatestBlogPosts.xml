@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>XWikiOrgCode</web>
+  <name>LatestBlogPosts</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>XWikiOrgCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1379077659000</creationDate>
+  <date>1379077706000</date>
+  <contentUpdateDate>1379077706000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Latest Blog Posts Section</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.LatestBlogPosts</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>0d94bdea-988b-441c-84c1-b3c1062488b0</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>#template('colorThemeInit.vm')
+
+a.latestPostsHeader {
+  color: $theme.textColor;
+}
+
+.latestpostsContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.latestposts .hentry {
+  padding: 0em 0 1em;
+}
+
+.latestposts .hentry + .hentry {
+  border: 0;
+  padding-top: .5em;
+}
+
+.latestposts .hentry h3 {
+  border: 0;
+  font-size: .9em;
+  margin: 0;
+}
+
+.latestposts .entry-metadata {
+  color: $theme.textSecondaryColor;
+  font-size: 0.93em; /* aprox. 13px */
+  line-height: 1.4em;
+}
+
+.latestposts .entry-summary {
+  font-size: .85em;
+  max-height: 4.25em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis; 
+  padding: 0;
+}
+
+.latestposts .entry-summary p {
+  margin-top: 0;
+}
+
+.gradientEnding {
+  bottom: 0;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  background: -moz-linear-gradient(
+     bottom, 
+     rgb(255, 255, 255) 15%,
+     rgba(255, 255, 255, 0) 100%
+   ); 
+   background: -webkit-gradient(
+     linear,
+     bottom,
+     top,
+     color-stop(15%, rgb(255, 255, 255)),
+     color-stop(100%, rgba(255, 255, 255, 0))
+   );
+   background: -webkit-linear-gradient(
+     bottom,
+     rgb(255,255,255) 15%,
+     rgba(255, 255, 255, 0) 100%
+   );
+   background: -o-linear-gradient(
+     bottom,
+     rgb(255,255,255) 15%,
+     rgba(255, 255, 255, 0) 100%
+   );
+   background: -ms-linear-gradient(
+     bottom,
+     rgb(255,255,255) 15%,
+     rgba(255, 255, 255, 0) 100%
+   );
+   /*filter: 
+     progid:DXImageTransform.Microsoft.gradient(
+     startColorstr='#03ffffff',
+     endColorstr='#ffffff', GradientType=0
+   );*/
+   background: linear-gradient(
+     bottom,
+     rgb(255, 255, 255) 15%,
+     rgba(255, 255, 255, 0) 100%
+   );
+}</code>
+    </property>
+    <property>
+      <name>Latest Posts Style</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.WikiMacroClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>9</number>
+        <prettyName>Macro code</prettyName>
+        <rows>20</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentDescription>
+        <disabled>0</disabled>
+        <name>contentDescription</name>
+        <number>8</number>
+        <prettyName>Content description (Not applicable for "No content" type)</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </contentDescription>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>7</number>
+        <prettyName>Macro content type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator>|</separator>
+        <separators>|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>Optional|Mandatory|No content</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <defaultCategory>
+        <disabled>0</disabled>
+        <name>defaultCategory</name>
+        <number>4</number>
+        <prettyName>Default category</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </defaultCategory>
+      <description>
+        <disabled>0</disabled>
+        <name>description</name>
+        <number>3</number>
+        <prettyName>Macro description</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </description>
+      <id>
+        <disabled>0</disabled>
+        <name>id</name>
+        <number>1</number>
+        <prettyName>Macro id</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </id>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>2</number>
+        <prettyName>Macro name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <supportsInlineMode>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>supportsInlineMode</name>
+        <number>5</number>
+        <prettyName>Supports inline mode</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </supportsInlineMode>
+      <visibility>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>visibility</name>
+        <number>6</number>
+        <prettyName>Macro visibility</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator>|</separator>
+        <separators>|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>Current User|Current Wiki|Global</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </visibility>
+    </class>
+    <name>XWikiOrgCode.LatestBlogPosts</name>
+    <number>0</number>
+    <className>XWiki.WikiMacroClass</className>
+    <guid>bc3b7be6-043d-4d75-864e-25446c64e2c0</guid>
+    <property>
+      <code>{{include document="xwiki:Blog.BlogCode"/}}{{velocity output='false'}}
+$xwiki.ssx.use('xwiki:XWikiOrgCode.LatestBlogPosts')
+#**
+* Displays the metadatas of the entry (author + date).
+*
+* @param entryDoc The xdocument of the blog post. Each post resides in its own document.
+* @param entryObj The xobject of the blog post, an instance of the &lt;tt&gt;Blog.BlogPostClass&lt;/tt&gt; xclass.
+*###
+#macro(displayEntryMetadata $entryDoc $entryObj)
+  &lt;div class="entry-metadata"&gt;
+    by &lt;address class='author vcard'&gt;#userfn($entryDoc.creator)&lt;/address&gt;
+    #getEntryDate($entryDoc $entryObj $entryDate)
+    #set($year = $xwiki.formatDate($entryDate, 'yyyy'))
+    #set($month = $xwiki.formatDate($entryDate, 'MMM'))
+    #set($day = $xwiki.formatDate($entryDate, 'dd'))
+    posted on &lt;span class='published'&gt;$day $month $year&lt;/span&gt;
+  &lt;/div&gt;
+#end
+#**
+* Overrides #displayEntry(). Changes the article's display.
+* Displays a blog article.
+*###
+#macro(displayEntry $entryDoc $entryObj $onlyExtract $shouldDisplayTitle)
+  ## Only final articles (plublished and non hidden) are displayed
+  #isPublished($entryObj $isPublished)
+  #isHidden($entryObj $isHidden)
+  #if ($isPublished &amp;&amp; !$isHidden)
+  &lt;div class='hentry'&gt;
+    #displayEntryTitle($entryDoc $entryObj)
+    #displayEntryMetadata($entryDoc $entryObj)
+    #displayEntryContent($entryDoc $entryObj $onlyExtract)
+  &lt;/div&gt;
+  #end
+#end
+##
+#**
+* Overrides #displayBlog().
+* Displays a list of entries.
+*###
+#macro(displayBlog $entries $displaying $onlyExtract $shouldDisplayTitles)
+{{html clean='false' wiki='true'}}
+&lt;div class="hfeed $!{displaying}"&gt;
+  #foreach ($entryDoc in $xwiki.wrapDocs($entries))
+    #getEntryObject($entryDoc $entryObj)
+    ## Although all entries should have one of the two objects, better check to be sure.
+    #if("$!{entryObj}" != '')
+      #displayEntry($entryDoc $entryObj $onlyExtract $shouldDisplayTitles)
+    #end
+  #end
+&lt;/div&gt;
+{{/html}}
+#end
+#**
+* Overrides #getPagedBlogEntries(). Use $defaultItemsPerPage to change the displayed items.
+* Retrieves a list of entries to be displayed.
+*###
+#macro(getPagedBlogEntries $blogDoc $query $entries)
+  #if (!$entries)
+    #setVariable ("$entries" [])
+  #end
+  #set($totalEntries = $xwiki.countDocuments(${query}))
+  #set($defaultItemsPerPage = 4)
+  ## This macro is defined in the default macros.vm library. It also sets $itemsPerPage and $startAt.
+  #preparePagedViewParams($totalEntries $defaultItemsPerPage)
+  #set($discard = $entries.addAll($xwiki.searchDocuments("${query} order by publishDate.value desc", $itemsPerPage, $startAt)))
+#end
+#set($blogDoc = $xwiki.getDocument('xwiki:Blog.BlogSheet' ))
+#getBlogEntries($blogDoc $entries)
+{{/velocity}}{{velocity}}
+{{cache id='latestBlogPostsCache4' timeToLive='604800'}}
+#displayBlog($entries 'latestposts' true true)
+{{/cache}}
+{{/velocity}}</code>
+    </property>
+    <property>
+      <contentDescription/>
+    </property>
+    <property>
+      <contentType>Optional</contentType>
+    </property>
+    <property>
+      <defaultCategory/>
+    </property>
+    <property>
+      <description>Shows the latest blog posts articles</description>
+    </property>
+    <property>
+      <id>latestBlogPosts</id>
+    </property>
+    <property>
+      <name>Latest Blog Posts</name>
+    </property>
+    <property>
+      <supportsInlineMode/>
+    </property>
+    <property>
+      <visibility>Global</visibility>
+    </property>
+  </object>
+  <content>(% class='latestpostsContainer' %)
+(((
+== [[Latest Blog Posts&gt;&gt;xwiki:Blog.WebHome||class='latestPostsHeader' title='Read more news']] {{velocity}}[[image:icon:bullet_feed&gt;&gt;path:$xwiki.getURL("Blog.GlobalBlogRss", "view", "xpage=plain")||title='RSS feed']]{{/velocity}} ==
+
+{{latestBlogPosts /}}
+(% class='gradientEnding'%)((()))
+)))</content>
+</xwikidoc>

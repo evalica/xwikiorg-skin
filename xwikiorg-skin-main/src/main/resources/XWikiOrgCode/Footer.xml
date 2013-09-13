@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>XWikiOrgCode</web>
+  <name>Footer</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>XWikiOrgCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1379077659000</creationDate>
+  <date>1379077659000</date>
+  <contentUpdateDate>1379077659000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Footer Section</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <attachment>
+    <filename>social.png</filename>
+    <filesize>3531</filesize>
+    <author>XWiki.Admin</author>
+    <date>1323266096000</date>
+    <version>1.1</version>
+    <comment/>
+    <content>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
+</content>
+  </attachment>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.Footer</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>a2eeccc7-09c6-4dc5-a423-32aebb27b483</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>#template('colorThemeInit.vm')
+
+/* @group COLIBRI */
+/* --------------------------------------------------------------
+  * Reseting Colibri rules
+-------------------------------------------------------------- */
+#contentcontainer {
+  border: none;
+}
+
+/* @group FOOTER */
+/* --------------------------------------------------------------
+  * Sets the styles for footer columns
+-------------------------------------------------------------- */
+
+.footerContainer .wikiexternallink {
+  padding: 0;
+  background-image: none;
+}
+
+/* homepage-header is similar to footerContainer */
+.footerContainer {
+  background-color: #F7F7F7;
+  box-shadow: 5px -2px 5px #ECECEC;
+  border-radius: 20px 20px 0 0;
+  border-top: 1px solid #ECECEC;
+  font-size: .85em;  /* link text size should be 11.9px */
+  padding: 2em 1em 1em;
+  text-shadow: 0 1px 0 $theme.pageContentBackgroundColor;
+}
+
+.footerContainerInner {
+  margin: auto;
+  text-align: left;
+}
+
+.footerSection {
+  float: left;
+  padding: 0 .7em;
+}
+
+.footerGroup {
+  float: left;
+  margin: 0 .7em 0 0 ;
+}
+
+.footerSection h2 {
+  border: 0;
+  font-size: 1.41em; /* aprox. 16.8px */
+  letter-spacing: .02em;
+  margin: 0 0 1em;
+}
+
+.footerGroup h3, .footerVersion {
+  border: 0;
+  color: $theme.textPrimaryColor;
+  font-size: 1.1em;
+  font-variant: small-caps;
+  letter-spacing: .02em;
+  margin: -.1em 0 0;
+  text-transform: lowercase;  
+}
+
+.footerGroup h3 * {
+  line-height: 1em;
+}
+
+.footerGroup ul {
+  list-style-type: none;
+  padding: 0 0 1em;
+  margin: 0;
+  font-size: 0.94em; /* aprox. 11.2px */
+} 
+
+.footerVersion {
+  margin: 0 auto -1em;
+  text-align: center;
+}
+
+/* @end FOOTER */
+
+/* @group SOCIAL */
+/* --------------------------------------------------------------
+  * Sets the styles for footer columns
+-------------------------------------------------------------- */
+.social .icon {
+  background: url("$doc.getAttachmentURL('social.png')") no-repeat top left;
+  float: left;
+  height: 16px;
+  margin: 0 .5em 0 0;
+  width: 16px;
+}
+
+.social .icon a {
+  display: block;
+  text-indent: -9999em;
+}
+
+.icon.email { background-position: 0 0;  } 
+.icon.facebook { background-position: -26px 0;  } 
+.icon.feed { background-position: -52px 0;  } 
+.icon.google { background-position: -78px 0;  } 
+.icon.twitter { background-position: -104px 0;  } 
+
+/* @end SOCIAL */</code>
+    </property>
+    <property>
+      <name>Footer Style</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.Footer</name>
+    <number>1</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>6d0e4656-55cf-46c2-ae7a-0472332b1dad</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>/* rules present here because the footer is available not just on the homepage but also in the rest of the pages */
+/* be carefull to import the fonts in a global stylesheet */
+
+/*
+{{velocity}}
+$xwiki.linkx.use('http://fonts.googleapis.com/css?family=Open+Sans', {'rel': 'stylesheet', 'type': 'text/css'})
+$xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'stylesheet', 'type': 'text/css'})
+{{/velocity}}
+*/
+
+.footerSection h2 {
+  font-family: 'Lustria', Georgia, serif;
+}
+
+.footerGroup ul {
+  font-family: 'Open Sans','Lucida Grande',Verdana,Helvetica,Arial,sans-serif;
+}
+</code>
+    </property>
+    <property>
+      <name>Typography</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.Footer</name>
+    <number>2</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>19e5b655-83c0-44ed-be44-8f8bc62f4258</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.footerGroup {
+  min-width: 7.3em;
+}
+
+.sectionContribute .footerGroup {
+  min-width: 9em;
+}
+
+.sectionPlatform .footerGroup  {
+  min-width: 10em;
+}
+
+.groupEnterprise, .groupManager {
+  min-width: 9em;
+}
+
+.groupPractices {
+  max-width: 9em;
+}
+
+.sectionSupport {
+  width: 11%;
+}
+
+.sectionPlatform {
+  min-width: 120px;
+  width: 10%;
+}
+
+.sectionProjects {
+  width: 32%;
+}
+
+.sectionContribute {
+  width: 25%;
+}
+
+@media (max-width:1024px) {
+  .footerContainerInner {
+    width: 970px;
+  }
+}
+
+@media (min-width:1025px) {
+  .footerContainerInner {
+    width: 970px;
+  }
+}
+
+@media (min-width:1400px) {
+  .footerContainerInner {
+    width: auto;
+    margin: 0 2.5% 0 3%;
+  }
+  .footerGroup {
+    min-width: 7em;
+  }
+
+  .sectionAbout {
+    width: 5%;
+  }
+  .sectionProjects {
+    width: 38%;
+  }
+  .sectionContribute {
+    width: 29.5%;
+  }
+      .sectionContribute .footerGroup {
+        min-width: 8em;
+      }
+  .sectionPlatform {
+    width: 14%;
+  }
+      .sectionPlatform .footerGroup {
+        min-width: 8em;
+      }
+      .sectionPlatform .adminGroup {
+        min-width: 6em;
+      }
+  .sectionSupport {
+    width: 7%;
+  }
+}
+
+@media (min-width:1681px) {
+  .footerContainerInner {
+    width: auto;
+    margin: 0 7%;
+  }
+  .sectionProjects {
+    width: 36%;
+  }
+  .sectionPlatform {
+    width: 19%;
+  }
+  .sectionContribute {
+    width: 28%;
+  }
+  .sectionSupport {
+    width: 6%;
+  }
+}</code>
+    </property>
+    <property>
+      <name>Media queries</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <content>{{velocity}}
+#set($discard = $xwiki.ssx.use('xwiki:XWikiOrgCode.Footer'))
+{{/velocity}}
+
+{{cache id='footerCache4' timeToLive='2629743'}}
+(% class='footerContainer' %)
+(((
+(% class='footerContainerInner' %)
+(((
+(% class='footerSection sectionAbout' %)
+(((
+== About ==
+(% class='footerGroup' %)
+(((
+    * [[News &amp; Blog&gt;&gt;xwiki:Main.News]]
+    * [[References&gt;&gt;xwiki:References.WebHome]]
+    * [[Testimonials&gt;&gt;xwiki:References.Testimonials]]
+    * [[License&gt;&gt;xwiki:Main.License]]
+    * [[Media Resources&gt;&gt;xwiki:Main.Media]]
+    * [[Sponsors&gt;&gt;xwiki:Main.Supporters]]
+)))
+)))
+(% class='footerSection sectionContribute' %)
+(((
+== Projects ==
+(% class='footerGroup groupEnterprise' %)
+(((
+  === XWiki Enterprise ===
+    * [[Overview&gt;&gt;enterprise:Main.WebHome]]
+    * [[Features&gt;&gt;enterprise:Main.Features]]
+    * [[Documentation&gt;&gt;enterprise:Main.Documentation]]
+    * [[Roadmap&gt;&gt;enterprise:Main.Roadmap]]
+    * [[Release Notes&gt;&gt;xwiki:ReleaseNotes.WebHome||anchor='HXWikiEnterprise']]
+    * [[Download&gt;&gt;enterprise:Main.Download]]
+)))
+(% class='footerGroup' %)
+(((
+  === Extensions ===
+    * [[All extensions&gt;&gt;extensions:Main.WebHome]]
+    * [[Applications&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=xar']]
+    * [[Code Snippets&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=snippet']]
+    * [[Components&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=jar']]
+    * [[Macros&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=velocimacro']]
+    * [[Skins&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=skin']]
+)))
+(% class='footerGroup groupManager' %)
+(((
+  === XWiki Manager ===
+    * [[Overview&gt;&gt;manager:Main.WebHome]]
+    * [[Features&gt;&gt;manager:Main.Features]]
+    * [[Documentation&gt;&gt;manager:Main.Documentation]]
+    * [[Roadmap&gt;&gt;manager:Main.Roadmap]]
+    * [[Release Notes&gt;&gt;xwiki:ReleaseNotes.WebHome||anchor='HXWikiEnterpriseManager']]
+    * [[Download&gt;&gt;manager:Main.Download]]
+)))
+(% class='footerGroup' %)
+(((
+    === Other ===
+    * [[All projects&gt;&gt;xwiki:Main.Forge]]
+    * [[XWiki Rendering&gt;&gt;rendering:Main.WebHome]]
+    * [[XWiki Commons&gt;&gt;commons:Main.WebHome]]
+)))
+)))
+(% class='footerSection sectionPlatform' %)
+(((
+== Platform ==
+(% class='footerGroup' %)
+(((
+  === User Guide ===
+    * [[Getting Started&gt;&gt;enterprise:GettingStarted.WebHome]]
+    * [[Tutorials and Videos&gt;&gt;enterprise:UserGuide.WebHome]]
+    * [[Features Overview&gt;&gt;platform:Features.WebHome]]
+)))
+(% class='footerGroup adminGroup' %)
+(((
+  === Admin Guide ===
+    * [[All topics&gt;&gt;platform:AdminGuide.WebHome]]
+    * [[Installation&gt;&gt;platform:AdminGuide.Installation]]
+    * [[Configuration&gt;&gt;platform:AdminGuide.Configuration]]
+)))
+(% class='footerGroup' %)
+(((
+  === Developer Guide ===
+    * [[All topics&gt;&gt;platform:DevGuide.WebHome]]
+    * [[Architecture&gt;&gt;platform:DevGuide.Architecture]]
+    * [[Scripting&gt;&gt;platform:DevGuide.Scripting]]
+    * [[API Reference&gt;&gt;platform:DevGuide.API]]
+    * [[Tutorials and Guides&gt;&gt;platform:DevGuide.WebHome||anchor='HTutorialsandGuides']]
+)))
+)))
+(% class='footerSection sectionContribute' %)
+(((
+== Contribute ==
+(% class='footerGroup' %)
+(((
+  === Status ===
+    * [[All topics&gt;&gt;dev:Main.WebHome]]
+    * [[Governance&gt;&gt;dev:Community.Governance]]
+    * [[Project Health&gt;&gt;dev:Community.ProjectHealth]]
+    * [[Committership&gt;&gt;dev:Community.Committership]]
+    * [[Hall Of Fame&gt;&gt;dev:Community.HallOfFame]]
+    * [[Browser Support&gt;&gt;dev:Community.BrowserSupportStrategy]]
+)))
+(% class='footerGroup' %)
+(((
+  === Under the Hood ===
+    * [[Source Repository&gt;&gt;dev:Community.SourceRepository]]
+    * [[Building&gt;&gt;dev:Community.Building]]
+    * [[Continuous build&gt;&gt;dev:Community.ContinuousBuild]]
+    * [[Testing&gt;&gt;dev:Community.Testing]]
+    * [[Debugging&gt;&gt;dev:Community.Debugging]]
+    * [[Profiling&gt;&gt;dev:Community.Profiling]]
+)))
+(% class='footerGroup groupPractices' %)
+(((
+  === Practices ===
+    * [[Release Process&gt;&gt;dev:Community.ReleaseProcess]]
+    * [[Code Style&gt;&gt;dev:Community.CodeStyle]]
+    * [[Development Practices&gt;&gt;dev:Community.DevelopmentPractices]]
+    * [[Development Tools&gt;&gt;dev:Community.DevelopmentTools]]
+    * [[UX Guidelines&gt;&gt;dev:UserExperience.WebHome]]
+    * [[Design Proposals&gt;&gt;dev:Design.WebHome]]
+)))
+(% class='footerGroup' %)
+(((
+  === Get Involved ===
+    * [[Contributing&gt;&gt;dev:Community.Contributing]]
+    * [[Test &amp; Play&gt;&gt;playground:Main.WebHome]]
+    * [[Give Feedback&gt;&gt;xwiki:Main.Survey]]
+    * [[Translate content&gt;&gt;http://l10n.xwiki.org/xwiki/bin/view/L10N/WebHome]]
+    * [[Write Documentation&gt;&gt;dev:Community.DocGuide]]
+    * [[Report and Fix Bugs&gt;&gt;http://jira.xwiki.org/]]
+    * [[Share code&gt;&gt;https://github.com/xwiki]]
+)))
+)))
+(% class='footerSection sectionSupport' %)
+(((
+== Support ==
+(% class='footerGroup' %)
+(((
+    * [[Overview&gt;&gt;xwiki:Main.Support]]
+    * [[Documentation&gt;&gt;xwiki:Main.ProductDocumentation]]
+    * [[FAQs&gt;&gt;xwiki:FAQ.WebHome]]
+    * [[Mailing Lists&gt;&gt;dev:Community.MailingLists]]
+    * [[IRC and Jabber&gt;&gt;dev:Community.IRC]]
+    * [[Professional Support&gt;&gt;xwiki:Main.Support||anchor='HProfessionalSupport']]
+)))
+(% class='footerGroup' %)
+(((
+  === Get Connected ===
+(% class='social' %)(((
+    (% class='icon twitter' %)[[Twitter Account&gt;&gt;http://twitter.com/xwikiorg||title='Twitter Account']]
+    (% class='icon email' %)[[Mailing Lists&gt;&gt;dev:Community.MailingLists||title='Mailing Lists']]
+    (% class='icon feed' %){{velocity}}[[Blog RSS&gt;&gt;path:$xwiki.getURL("Blog.GlobalBlogRss", "view", "xpage=plain")||title='Blog RSS']]{{/velocity}}
+  )))
+)))
+)))
+(% class='clearfloats' %)((()))
+
+(%class='centered footerVersion'%)(((
+Powered by XWiki Enterprise {{velocity}}$xwiki.version{{/velocity}}
+)))
+
+)))
+{{/cache}}</content>
+</xwikidoc>

@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>DownloadCode</web>
+  <name>Style</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>DownloadCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1318062527000</creationDate>
+  <date>1318086358000</date>
+  <contentUpdateDate>1318086358000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Download Style</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.0</syntaxId>
+  <hidden>false</hidden>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>onDemand=On demand|always=Always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>DownloadCode.Style</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>1677169b-6f1b-4da1-b8eb-3c3fb3889b84</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.downloadHeader{
+  -moz-border-radius: 50px 6px 6px 50px;
+  -webkit-border-radius: 50px 6px 6px 50px;
+  border-radius: 50px 6px 6px 50px;
+  -moz-box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.downloadHeader.enterprise, .downloadButton.enterprise {
+  background-color: #D45500;
+  filter: progid:DXImageTransform.Microsoft.Gradient( StartColorStr='#D45500', EndColorStr='#EA8708', GradientType=0);
+  background: linear-gradient(center top , #D45500 left top, #EA8708 left bottom) #EA8708;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D45500), color-stop(1, #EA8708)) #EA8708;
+  background: -moz-linear-gradient(center top , #D45500 0pt, #EA8708 100%) repeat scroll 0 0 transparent;
+}
+
+.downloadHeader.manager, .downloadButton.manager {
+  background-color: #276400;
+  filter: progid:DXImageTransform.Microsoft.Gradient( StartColorStr='#4D9244', EndColorStr='#276400', GradientType=0);
+  background: linear-gradient(center top , #4D9244 left top, #276400 left bottom) #276400;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4D9244), color-stop(1, #276400)) #276400;
+  background: -moz-linear-gradient(center top , #4D9244 0%, #276400 100%) repeat scroll 0 0 transparent;
+}
+
+.downloadHeader.watch, .downloadButton.watch {
+  background-color: #800000;
+  filter: progid:DXImageTransform.Microsoft.Gradient( StartColorStr='#800000', EndColorStr='#C40623', GradientType=0);
+  background: linear-gradient(center top , #800000 left top, #C40623 left bottom) #C40623;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #800000), color-stop(1, #C40623)) #C40623;
+  background: -moz-linear-gradient(center top , #800000 0%, #C40623 100%) repeat scroll 0 0 transparent;
+}
+
+.downloadHeader.eclipse, .downloadButton.eclipse, .downloadHeader.office, .downloadButton.office {
+  background-color: #205768;
+  filter: progid:DXImageTransform.Microsoft.Gradient( StartColorStr='#205768', EndColorStr='#297085', GradientType=0);
+  background: linear-gradient(center top , #205768 left top, #297085 left bottom) #297085;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #205768), color-stop(1, #297085)) #297085;
+  background: -moz-linear-gradient(center top , #205768 0%, #297085 100%) repeat scroll 0 0 transparent;
+}
+
+.downloadHeader-content {
+  background: url("/xwiki/bin/download/XWiki/XWikiOrgSkinExtension/xwikimini.png") no-repeat scroll left center transparent;
+  _background-image:  url("/xwiki/bin/download/XWiki/XWikiOrgSkinExtension/xwikimini.gif"); /* IE6 transparency */
+  display: block;
+  font-size: 1.2em;
+  height: 64px;
+  line-height: 1.2em;
+  margin-left: 17px;
+  padding: 10px 20px 0 65px;
+  position: relative;
+}
+
+.downloadHeader-project {
+  display: block;
+  font-size: 1.6em;
+  letter-spacing: -0.02em;
+}
+
+.downloadHeader-project a {
+  color: #fff;
+}
+
+.downloadHeader-version {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.downloadHeader-type {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px 0;
+  margin-top: 2em;
+  padding: 0 1.5em 0 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.downloadHeader-type:before {
+  content:"\2211";
+  font-size: 22px;
+  left: -12px;
+  line-height: 25px;
+  position: absolute;
+  top: -7px;
+}</code>
+    </property>
+    <property>
+      <name>Download Header</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>onDemand=On demand|always=Always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>DownloadCode.Style</name>
+    <number>1</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>e62cd162-4fe9-492d-a4cc-9d188f5c5049</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.downloadButton{
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  color: #fff !important;
+  float: right;
+  *float: left;
+  font-size: .85em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  padding: 8px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.downloadButton:hover {
+  box-shadow: 0 3px rgba(0, 0, 0, 0.15), 0 -4px rgba(0, 0, 0, 0.15) inset, 0 0 80px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0 3px rgba(0, 0, 0, 0.15), 0 -4px rgba(0, 0, 0, 0.15) inset, 0 0 80px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.15), 0 -4px rgba(0, 0, 0, 0.15) inset, 0 0 80px rgba(255, 255, 255, 0.3) inset;
+}
+
+.downloadButton:before {
+  background: #6b4;
+  content: '\21a1';
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  display: inline-block;
+  font-weight: 900;
+  padding: 2px 5px;
+  margin-right: 4px;
+}
+
+.downloadInfo  + .downloadButton {
+  margin: 0.3em 0 0;
+}
+
+/***************** Download Panel *****************/
+#download .xwikipanelcontents a { 
+  font-size: 1em;
+  width: 174px;
+}</code>
+    </property>
+    <property>
+      <name>Download Buttons, Download Panel</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>onDemand=On demand|always=Always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>DownloadCode.Style</name>
+    <number>2</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>96a56c11-316a-4d9b-a1cd-54af565b6bef</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.downloadProject{
+  border-bottom: 1px dotted #ccc;
+} 
+ 
+.downloadNotes {
+  padding: 0 0 0 1em;
+}
+
+.downloadNotes + table {
+  margin-top: 0;
+}
+
+.downloadInfo .label {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table.downloadInfo {
+  margin: 0;
+  min-width: 200px;
+}
+
+.secondaryText {
+  color: #888;
+  font-size: .85em;
+}
+
+.downloadProject ~ .wiki-table {
+  width: 99%;
+}
+
+.downloadProject ~ .wiki-table th, 
+.downloadProject ~ .wiki-table td {
+  border-style:dotted;
+}
+
+.downloadProject ~ .wiki-table th {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.downloadProject ~ .wiki-table td {
+  border-bottom: 1px dotted #ccc;
+  vertical-align: top;
+}</code>
+    </property>
+    <property>
+      <name>Download Notes</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>onDemand=On demand|always=Always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>DownloadCode.Style</name>
+    <number>3</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>a88c7455-fb77-49f3-8f41-b00c5a420f76</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.downloadCategory  h2 {
+  border: 0 none;
+  color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  padding: .5em .5em .5em 30px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.genericCategory  h2 {
+  background-color: #D45500;
+}</code>
+    </property>
+    <property>
+      <name>Other Downloads Categories</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>onDemand=On demand|always=Always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>DownloadCode.Style</name>
+    <number>4</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>bbc13a89-8f8b-42dc-889a-e5d8d79cf4f6</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.downloadCompleted {
+  border-bottom: 3px solid #E5E5E5; 
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.downloadCompleted  .downloadNotes {
+  padding: 1px 0 1px 6em;
+}
+
+.downloadFeedback .floatinginfobox h3 {
+  margin-top: 0;
+}
+
+.commiters {
+  text-align: right;
+}
+
+table.companies {
+  border-top: 1px dotted #ccc;
+  background-color: #FFF;
+  margin-bottom: 0;
+  width: 99%;
+}
+
+table.companies td {
+  border-bottom: 1px dotted #ccc;
+}
+
+/***************** Download External Form Style *****************/
+
+.wForm label {
+  color: #414242;
+  display: block;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+}
+
+.wForm .oneField  {
+  margin: 1.2em 0 0;
+}</code>
+    </property>
+    <property>
+      <name>Download Feedback</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <content/>
+</xwikidoc>

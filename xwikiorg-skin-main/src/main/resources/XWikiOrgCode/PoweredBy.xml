@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>XWikiOrgCode</web>
+  <name>PoweredBy</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>XWikiOrgCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1379077659000</creationDate>
+  <date>1379077659000</date>
+  <contentUpdateDate>1379077659000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Powered By Section</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.PoweredBy</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>d406e2c2-fa5d-4b80-8a07-2dc4eaf6e74a</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.poweredBy .website { 
+  font-size: .9em;
+}
+
+.poweredBy .author {
+  color: #888;
+  font-size: 0.93em; /* aprox. 13px */
+}
+
+.poweredBy .author a {
+  color: #888;
+}
+
+.poweredBy .website p, .poweredBy .author p, .poweredBy .description p {
+  margin: 0;
+}
+
+.poweredBy .more a {
+  color: #888;
+  width: 100%;
+  text-align: right; 
+  font-size: 0.93em; /* aprox. 13px */
+  display: block;
+}
+
+.poweredBy .description {
+  font-size: .85em;
+  max-height: 4.25em;
+  overflow: hidden;
+}
+
+.poweredBy .snapshot {
+  border: 1px solid #EAEAEA;
+  -webkit-box-shadow:  -2px 2px 5px #dedede;
+  -moz-box-shadow:  -2px 2px 5px #dedede;
+  box-shadow:  -2px 2px 5px #dedede;
+  left: -7px;
+  padding: 5px 7px 7px 5px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.05em;
+  height: 13em;
+  overflow: hidden;
+}
+
+.poweredBy .snapshot * {
+  line-height: 0;
+  margin: 0;
+}
+
+.poweredBy img {
+  border: 1px solid #EAEAEA;
+  width: 100%;
+}
+
+/***************************************************************** IE8 HACKS */
+@media \0screen {
+ .poweredBy img {
+   width: auto;
+   max-height: 12em;
+ }
+}</code>
+    </property>
+    <property>
+      <name>Powered By Style</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.WikiMacroClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>9</number>
+        <prettyName>Macro code</prettyName>
+        <rows>20</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentDescription>
+        <disabled>0</disabled>
+        <name>contentDescription</name>
+        <number>8</number>
+        <prettyName>Content description (Not applicable for "No content" type)</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </contentDescription>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>7</number>
+        <prettyName>Macro content type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator>|</separator>
+        <separators>|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>Optional|Mandatory|No content</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <defaultCategory>
+        <disabled>0</disabled>
+        <name>defaultCategory</name>
+        <number>4</number>
+        <prettyName>Default category</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </defaultCategory>
+      <description>
+        <disabled>0</disabled>
+        <name>description</name>
+        <number>3</number>
+        <prettyName>Macro description</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </description>
+      <id>
+        <disabled>0</disabled>
+        <name>id</name>
+        <number>1</number>
+        <prettyName>Macro id</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </id>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>2</number>
+        <prettyName>Macro name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <supportsInlineMode>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>supportsInlineMode</name>
+        <number>5</number>
+        <prettyName>Supports inline mode</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </supportsInlineMode>
+      <visibility>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>visibility</name>
+        <number>6</number>
+        <prettyName>Macro visibility</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator>|</separator>
+        <separators>|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>Current User|Current Wiki|Global</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </visibility>
+    </class>
+    <name>XWikiOrgCode.PoweredBy</name>
+    <number>0</number>
+    <className>XWiki.WikiMacroClass</className>
+    <guid>b3f6ce7f-bde1-4489-a639-d38b1dc31f08</guid>
+    <property>
+      <code>{{velocity}}
+{{cache id='poweredByCache' timeToLive='3600'}}
+#set($discard = $xwiki.ssx.use('xwiki:XWikiOrgCode.PoweredBy'))
+#**
+* Creates the url for the first attachment of a document (filename, width, height). If there is no attachment, a default value is set.
+*
+* @param document The reference document.
+* @param result The resulting url.
+*###
+#macro(getImageUrl $document $result)
+  #set ($result = $util.null)
+  #set ($imgWidth = "")
+  #set ($imgHeight = "")
+  #if ($document.attachmentList.size() &gt; 0)
+    #set ($attach = $document.attachmentList.get(0))
+    #setVariable ("$result" "$randomReferenceDoc.getExternalURL('download')/$escapetool.url($attach.filename)?$imgWidth&amp;$imgHeight")
+  #else
+    #set ($referenceSheet = $xwiki.getDocument('XWiki.ReferenceClassSheet'))
+    #setVariable ("$result" "$referenceSheet.getExternalURL('download')/$escapetool.url($referenceSheet.attachmentList.get(0).filename)?$imgWidth&amp;$imgHeight")
+  #end
+#end
+#set($referencesList = $xwiki.searchDocuments(", BaseObject as reference where doc.fullName=reference.name and reference.className='XWiki.ReferenceClass' and doc.fullName&lt;&gt;'XWiki.ReferenceClassTemplate' order by doc.title"))
+#set ($randomSeed = $mathtool.random(0, $referencesList.size()))
+#set($randomReferenceName = $referencesList.get($randomSeed))
+#set($randomReferenceDoc = $xwiki.getDocument($randomReferenceName))
+#set ($url = $randomReferenceDoc.getValue("URL").trim())
+#getImageUrl($randomReferenceDoc $imageUrl)
+#set($projectURL = $randomReferenceDoc.getURL())
+(% class='poweredBy' %)
+(((
+ (% class='snapshot'%)((([[[[image:$imageUrl||alt="$randomReferenceDoc.getValue('Project')"]]&gt;&gt;path:$projectURL]])))
+ #if ("$!url" != "") 
+   (% class='website'%)((([[$randomReferenceDoc.getValue('Project')&gt;&gt;$url]])))
+   (% class='author'%)(((by [[$randomReferenceDoc.getValue('Organization')&gt;&gt;$url]])))
+  #else
+   (% class='website'%)((($randomReferenceDoc.getValue('Project'))))
+   (% class='author'%)(((by $randomReferenceDoc.getValue('Organization'))))
+  #end
+ (% class='description'%)((($randomReferenceDoc.getValue('Usage'))))
+ (% class='more'%)[[more references {{html}}&amp;hellip;{{/html}}&gt;&gt;xwiki:References.WebHome]]
+)))
+{{/cache}}
+{{/velocity}}</code>
+    </property>
+    <property>
+      <contentDescription/>
+    </property>
+    <property>
+      <contentType>Optional</contentType>
+    </property>
+    <property>
+      <defaultCategory/>
+    </property>
+    <property>
+      <description>Displays a random reference summary</description>
+    </property>
+    <property>
+      <id>poweredBy</id>
+    </property>
+    <property>
+      <name>Powered By</name>
+    </property>
+    <property>
+      <supportsInlineMode/>
+    </property>
+    <property>
+      <visibility>Global</visibility>
+    </property>
+  </object>
+  <content>(% class='poweredByContainer' %)
+(((
+== Powered by XWiki ==
+{{poweredBy/}}
+)))</content>
+</xwikidoc>
