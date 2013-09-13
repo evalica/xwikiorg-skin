@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077659000</creationDate>
-  <date>1379077659000</date>
-  <contentUpdateDate>1379077659000</contentUpdateDate>
+  <creationDate>1378792901000</creationDate>
+  <date>1379065025000</date>
+  <contentUpdateDate>1379064420000</contentUpdateDate>
   <version>1.1</version>
   <title>XWiki Projects Section</title>
   <defaultTemplate/>
@@ -8248,27 +8248,24 @@ j6v3n483B5e4vnzKvfDhfW9l3q38P6+jn4RC/RF3AAAAAElFTkSuQmCC
 
 .projects {
   font-size: .85em;
-  margin-top: .5em;
+  display: none;
 }
 
 .projects ul {
   list-style-type: none;
-  margin: 0 0 3em;
+  margin: 1.5em 0 3em;
   padding: 0;
   position: relative;
-  width: 510px;
 }
 .projects li {
   display: inline-block;
   vertical-align: top;
   min-height: 90px;
-  *float: left; /* IE7 */
 }
 .projects li .details {
   position: absolute;
   left: 0;
   top: 8em;
-  width: 110%;
 }
 
 .projects li .project + .details {
@@ -8344,6 +8341,18 @@ j6v3n483B5e4vnzKvfDhfW9l3q38P6+jn4RC/RF3AAAAAElFTkSuQmCC
 }
 #project5 {
   background-image: url("$doc.getAttachmentURL('xoffice.png')");
+}
+
+@media (max-width: 768px) {
+  .projects ul {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 480px) {
+  .projects {
+    display: block;
+  }
 }</code>
     </property>
     <property>
@@ -8436,8 +8445,7 @@ j6v3n483B5e4vnzKvfDhfW9l3q38P6+jn4RC/RF3AAAAAElFTkSuQmCC
       <cache>long</cache>
     </property>
     <property>
-      <code>
-#infographic .slide-picture {
+      <code>#infographic .slide-picture {
   background-image: url("$doc.getAttachmentURL('abstract.png')");
   background-repeat: no-repeat;
   background-position: 380px 85px;
@@ -8445,7 +8453,7 @@ j6v3n483B5e4vnzKvfDhfW9l3q38P6+jn4RC/RF3AAAAAElFTkSuQmCC
 }
 
 .infographic {
-  margin: 2% 20%;
+  margin: 5% auto;
   position: relative;
 }
 
@@ -8995,22 +9003,30 @@ j6v3n483B5e4vnzKvfDhfW9l3q38P6+jn4RC/RF3AAAAAElFTkSuQmCC
 $xwiki.ssx.use("$doc.fullName")
 {{/velocity}}
 
+{{comment}}
 {{cache id='section0Cache4' timeToLive='2629743'}}
-(% class='wrap slide' id='infographic' %)(((
-(% class='slide-text' %)(((
-= XWiki Projects and their relation =
+{{/comment}}
+(% class='slide row' id='infographic' %)(((
+(% class='slide-text col-xs-12 col-sm-8' %)(((
+
+= XWiki Projects =
 
 == XWiki offers both a generic [[platform&gt;&gt;platform:Main.WebHome]] for developing collaborative applications using the [[wiki&gt;&gt;http://en.wikipedia.org/wiki/Wikiwiki]] paradigm and projects developed on top of it. ==
 
 (% class='projects' %)(((
-* (% id='project1' class='project' %)[[Platform&gt;&gt;platform:Main.WebHome]] (%class='details'%)[[XWiki Platform&gt;&gt;platform:Main.WebHome]] is the generic wiki platform offering runtime services for applications built on top of it.(%%)
-* (% id='project2' class='project' %)[[Enterprise&gt;&gt;enterprise:Main.WebHome]] (%class='details'%)[[XWiki Enterprise&gt;&gt;enterprise:Main.WebHome]] is a [[fully-featured&gt;&gt;enterprise:Main.Features]] wiki for the Enterprise. It's also a [[second generation wiki&gt;&gt;xwiki:Main.SecondGenerationWiki]] offering the ability to install and develop small applications inside wiki pages.(%%)
-* (% id='project3' class='project' %)[[Manager&gt;&gt;manager:Main.WebHome]] (%class='details'%)[[XWiki Enterprise Manager&gt;&gt;manager:Main.WebHome]] is an application to manage a farm of wikis, allowing large-scale organization and massive scalability.(%%)
-* (% class='more project' %)[[All projects&gt;&gt;xwiki:Main.Forge]] (%class='details'%)All XWiki software is developed in Java and under the [[LGPL open source license&gt;&gt;xwiki:Main.License]]. Top Level Projects are actively developed by the XWiki Development Team. In order to see all our projects please visit the [[forge&gt;&gt;xwiki:Main.Forge]].(%%)
+* (% id='project1' class='project' %)[[Platform&gt;&gt;platform:Main.WebHome]] (%class='details hidden-xs'%)[[XWiki Platform&gt;&gt;platform:Main.WebHome]] is the generic wiki platform offering runtime services for applications built on top of it.(%%)
+* (% id='project2' class='project' %)[[Enterprise&gt;&gt;enterprise:Main.WebHome]] (%class='details hidden-xs'%)[[XWiki Enterprise&gt;&gt;enterprise:Main.WebHome]] is a [[fully-featured&gt;&gt;enterprise:Main.Features]] wiki for the Enterprise. It's also a [[second generation wiki&gt;&gt;xwiki:Main.SecondGenerationWiki]] offering the ability to install and develop small applications inside wiki pages.(%%)
+* (% id='project3' class='project' %)[[Manager&gt;&gt;manager:Main.WebHome]] (%class='details hidden-xs'%)[[XWiki Enterprise Manager&gt;&gt;manager:Main.WebHome]] is an application to manage a farm of wikis, allowing large-scale organization and massive scalability.(%%)
+* (% class='more project' %)[[All projects&gt;&gt;xwiki:Main.Forge]] (%class='details hidden-xs'%)All XWiki software is developed in Java and under the [[LGPL open source license&gt;&gt;xwiki:Main.License]]. Top Level Projects are actively developed by the XWiki Development Team. In order to see all our projects please visit the [[forge&gt;&gt;xwiki:Main.Forge]].(%%)
+
+(% class='visible-xs' %)(((
+All XWiki software is developed in Java and under the [[LGPL open source license&gt;&gt;xwiki:Main.License]]. In order to see all our projects please visit the [[forge&gt;&gt;xwiki:Main.Forge]].
 )))
 )))
 
-(% class='slide-picture' %)(((
+)))
+
+(% class='slide-picture hidden-xs col-sm-4' %)(((
 (% class="infographic" %)(((
 (% class="graphic platform" title="XWiki Platform" %)(((
 (% class="effect" %)((()))
@@ -9024,9 +9040,7 @@ $xwiki.ssx.use("$doc.fullName")
 )))
 )))
 
-(% class='clearfloats' %)((( )))
 )))
 
-(% class='clearfloats' %)((( )))
-{{/cache}}</content>
+{{comment}}{{/cache}}{{/comment}}</content>
 </xwikidoc>
