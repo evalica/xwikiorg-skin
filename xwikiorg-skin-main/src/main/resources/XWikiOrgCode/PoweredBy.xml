@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077659000</creationDate>
-  <date>1379077659000</date>
-  <contentUpdateDate>1379077659000</contentUpdateDate>
+  <creationDate>1378792900000</creationDate>
+  <date>1378892909000</date>
+  <contentUpdateDate>1378792900000</contentUpdateDate>
   <version>1.1</version>
   <title>Powered By Section</title>
   <defaultTemplate/>
@@ -104,6 +104,7 @@
     <property>
       <code>.poweredBy .website { 
   font-size: .9em;
+  line-height: 1.3em;
 }
 
 .poweredBy .author {
@@ -133,27 +134,14 @@
   overflow: hidden;
 }
 
-.poweredBy .snapshot {
-  border: 1px solid #EAEAEA;
-  -webkit-box-shadow:  -2px 2px 5px #dedede;
-  -moz-box-shadow:  -2px 2px 5px #dedede;
+.poweredBy .thumbnail {
   box-shadow:  -2px 2px 5px #dedede;
-  left: -7px;
-  padding: 5px 7px 7px 5px;
-  position: relative;
-  text-align: center;
-  margin-bottom: 1.05em;
-  height: 13em;
+  margin-bottom: 1em;
   overflow: hidden;
 }
 
-.poweredBy .snapshot * {
-  line-height: 0;
-  margin: 0;
-}
-
 .poweredBy img {
-  border: 1px solid #EAEAEA;
+  height: 13em;
   width: 100%;
 }
 
@@ -291,7 +279,9 @@
     <guid>b3f6ce7f-bde1-4489-a639-d38b1dc31f08</guid>
     <property>
       <code>{{velocity}}
+{{comment}}
 {{cache id='poweredByCache' timeToLive='3600'}}
+{{/comment}}
 #set($discard = $xwiki.ssx.use('xwiki:XWikiOrgCode.PoweredBy'))
 #**
 * Creates the url for the first attachment of a document (filename, width, height). If there is no attachment, a default value is set.
@@ -312,26 +302,32 @@
   #end
 #end
 #set($referencesList = $xwiki.searchDocuments(", BaseObject as reference where doc.fullName=reference.name and reference.className='XWiki.ReferenceClass' and doc.fullName&lt;&gt;'XWiki.ReferenceClassTemplate' order by doc.title"))
-#set ($randomSeed = $mathtool.random(0, $referencesList.size()))
-#set($randomReferenceName = $referencesList.get($randomSeed))
-#set($randomReferenceDoc = $xwiki.getDocument($randomReferenceName))
-#set ($url = $randomReferenceDoc.getValue("URL").trim())
-#getImageUrl($randomReferenceDoc $imageUrl)
-#set($projectURL = $randomReferenceDoc.getURL())
-(% class='poweredBy' %)
-(((
- (% class='snapshot'%)((([[[[image:$imageUrl||alt="$randomReferenceDoc.getValue('Project')"]]&gt;&gt;path:$projectURL]])))
- #if ("$!url" != "") 
-   (% class='website'%)((([[$randomReferenceDoc.getValue('Project')&gt;&gt;$url]])))
-   (% class='author'%)(((by [[$randomReferenceDoc.getValue('Organization')&gt;&gt;$url]])))
-  #else
-   (% class='website'%)((($randomReferenceDoc.getValue('Project'))))
-   (% class='author'%)(((by $randomReferenceDoc.getValue('Organization'))))
-  #end
- (% class='description'%)((($randomReferenceDoc.getValue('Usage'))))
- (% class='more'%)[[more references {{html}}&amp;hellip;{{/html}}&gt;&gt;xwiki:References.WebHome]]
-)))
+#if($referencesList.size() &gt; 0)
+  #set ($randomSeed = $mathtool.random(0, $referencesList.size()))
+  #set($randomReferenceName = $referencesList.get($randomSeed))
+  #set($randomReferenceDoc = $xwiki.getDocument($randomReferenceName))
+  #set ($url = $randomReferenceDoc.getValue("URL").trim())
+  #getImageUrl($randomReferenceDoc $imageUrl)
+  #set($projectURL = $randomReferenceDoc.getURL())
+  (% class='poweredBy' %)
+  (((
+   (% class='thumbnail'%)[[[[image:$imageUrl||alt="$randomReferenceDoc.getValue('Project')" class='img-thumbnail']]&gt;&gt;path:$projectURL]]
+   #if ("$!url" != "") 
+     (% class='website'%)((([[$randomReferenceDoc.getValue('Project')&gt;&gt;$url]])))
+     (% class='author'%)(((by [[$randomReferenceDoc.getValue('Organization')&gt;&gt;$url]])))
+    #else
+     (% class='website'%)((($randomReferenceDoc.getValue('Project'))))
+     (% class='author'%)(((by $randomReferenceDoc.getValue('Organization'))))
+    #end
+   (% class='description'%)((($randomReferenceDoc.getValue('Usage'))))
+   (% class='more'%)[[more references {{html}}&amp;hellip;{{/html}}&gt;&gt;xwiki:References.WebHome]]
+  )))
+#else
+(%class='noitems'%)(((No references)))
+#end
+{{comment}}
 {{/cache}}
+{{/comment}}
 {{/velocity}}</code>
     </property>
     <property>
