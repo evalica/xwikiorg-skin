@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>XWikiOrgCode</web>
+  <name>Homepage</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>XWikiOrgCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1379081432000</creationDate>
+  <date>1379081432000</date>
+  <contentUpdateDate>1379081432000</contentUpdateDate>
+  <version>1.1</version>
+  <title>Homepage</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <attachment>
+    <filename>bg.png</filename>
+    <filesize>157</filesize>
+    <author>XWiki.Admin</author>
+    <date>1331129520000</date>
+    <version>1.6</version>
+    <comment/>
+    <content>iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAG7AAABuwBHnU4NQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAaSURB
+VAiZY/z//z8DAwMDAzMjI6ODg4PDAwA0hATl5emWqQAAAABJRU5ErkJggg==
+</content>
+  </attachment>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.Homepage</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>edf8503b-91c8-4671-8461-77550b7820ac</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>#body #contentcontainer #contentcolumn {
+  width: 100%;
+}
+
+#rightPanels, .viewbody #contentmenu, #document-title, #document-info, #xdocFooter, #hierarchy {
+  display: none;
+}
+
+.main &gt; div:nth-child(2) { /* .floating-menu additional container */
+  display: none;
+}
+
+.navigation-menu {
+  margin-bottom: 0;
+}</code>
+    </property>
+    <property>
+      <name>Hidding Skin Elements</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.Homepage</name>
+    <number>2</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>10830e61-a226-4afb-8097-c873d5a3a768</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>#contentcontainer { 
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media (max-width: 768px) {
+  #xwikicontent {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  #xwikicontent {
+    overflow: auto;
+  }
+}</code>
+    </property>
+    <property>
+      <name>Homepage Layout</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.Homepage</name>
+    <number>3</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>c8fed066-eef5-49fb-98d3-efaf3da93317</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.homepage h1, .homepage h2, .homepage h3 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+}
+
+.homepage h2 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}</code>
+    </property>
+    <property>
+      <name>Typography</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XWikiOrgCode.Homepage</name>
+    <number>4</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>f7ed3640-8abf-4a84-8fea-5ebdedecba76</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.homepage-carousel {
+  background-color: #F7F7F7;
+  background-image: url("$doc.getAttachmentURL('bg.png')");
+  box-shadow: 0 2px 5px #dedede;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .homepage-carousel {
+    margin: 0 -100%;
+    padding: 0 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .homepage-content {
+    padding-top: 22em;
+  }
+
+  #contentcontainer {
+    position: relative;
+  }
+
+  #body #contentcontainer #contentcolumn {
+    position: inherit;
+  }
+}
+
+@media (min-width: 480px) {
+  .homepage-carousel .section {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .main-wiki .homepage-carousel {
+    background: 
+    url("/xwiki/bin/download/Carousel/Section0/abstract.png") 180% 0 no-repeat,
+    url("$doc.getAttachmentURL('bg.png')") 0 0 repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .homepage-carousel .section {
+    background-color: transparent;
+  }
+
+  .main-wiki .homepage-carousel {
+    background: 
+    url("/xwiki/bin/download/Carousel/Section0/abstract.png") 80% 0 no-repeat,
+    url("/xwiki/bin/download/Carousel/Section0/abstract.png") 20% 0 no-repeat,
+    url("$doc.getAttachmentURL('bg.png')") 0 0 repeat;
+  }
+
+  .extension-wiki .homepage-carousel {
+    background: 
+    url("/xwiki/bin/download/Carousel/Section2/extended.png") 20% 50% no-repeat,
+    url("$doc.getAttachmentURL('bg.png')") 0 0 repeat;
+  }
+}</code>
+    </property>
+    <property>
+      <name>Carousel Layout</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <content>(% class="homepage main-wiki" %)
+(((
+(% class="homepage-carousel" %)
+(((
+
+)))
+
+(% class="homepage-content" %)
+(((
+
+)))
+)))</content>
+</xwikidoc>
