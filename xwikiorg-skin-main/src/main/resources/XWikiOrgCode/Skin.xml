@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077658000</creationDate>
-  <date>1379077658000</date>
-  <contentUpdateDate>1379077658000</contentUpdateDate>
+  <creationDate>1379078961000</creationDate>
+  <date>1379078932000</date>
+  <contentUpdateDate>1378819582000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <defaultTemplate/>
@@ -26,13 +26,35 @@
     <filename>check.png</filename>
     <filesize>194</filesize>
     <author>xwiki:XWiki.evalica</author>
-    <date>1331131002000</date>
-    <version>1.4</version>
+    <date>1330545458000</date>
+    <version>1.1</version>
     <comment/>
     <content>iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAGRJREFUeNpi+v//PwM2PGVd9n8QjVPy3fcr/0E0CwMUTF2fA1TOwAjE
 /6M8MxmuvJoMZLIwMMEkQYLIkpfOgvUyMsFMAAmiS4IJsEOgpugZ/wFLZgdOYYRpxOpyZAw3ARcA
 CDAAXKlsU7MmdH4AAAAASUVORK5CYII=
+</content>
+  </attachment>
+  <attachment>
+    <filename>logo-xs.png</filename>
+    <filesize>732</filesize>
+    <author>XWiki.Admin</author>
+    <date>1378819582000</date>
+    <version>1.1</version>
+    <comment/>
+    <content>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAIiQAACIkBBGdvaQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJZSURB
+VFiF1Zcxa1RBEMf/L16uuYtgm4igGBKIFmlC0gYLieAnCFydD2AVSO03SBFJaWcjqJeUYqGNJlWu
+EIVcLAUDZ+GJ97N4G923N7vv+QQP/7Dwdmf2v7Ozb2dmM0A10ZT0VNJI0j1J9YiAsF0Blo3xsC3w
+G/MlulPAiuMuyKYCezYk9SW9lXQoqZ2wPfO+LyX02pJeSnoj6bOktZQHHlPEC6AR2dWip7cY0Wk4
+Dh9PUh44Dfp3Je0mdleGXcfh43XKA5eBY8axXfIPLBjybYPn2K3xS89y2xzQNyZvBnrTQA84AVqB
+bNOY33fchfVif+1t4Dwg+AasG7rNoL/udH2cO86xtVJX5w4wDIi+AEuJOUtOx8fQcZlzyu56J/Qj
+cArMGrqzThaik1qjzAABOwbpO2DG05lxYyF2yvirGCBg3yDvkt/zhvsOsV+Fu6oBDeDAWOSRayEO
+iAewWgZcuPnIWCzEEcXjSbYMyCTdVDGeI+lM0tcgis25SHY1EvnOJK1K+hSMT0u6oWL+QNJHAc8j
+Ozlh/I4LuAUMDP2Bk1k77UXW6E5JY/ngApmkYUT2J2gqXiuMMqAp6boh/CDpezBW9whabo5/BD8k
+vZ/4T/jfXMOJBqKJhuKOQfrPktFE03HVgsQKVH9dkFQtyVrk0bJHXp75stol2cSL0gfGpD2DXFR7
+F+wZfA99nTAPrAb9rqStSNitgi3H4eNaoRdYvAaMnKWvgHZkZ1U9IMdx6PQGwEbqCET+gFwhf1Cm
+rum8Z4D1D4RtGeNxmkHt53km6ZnydH5fNVP3T5yeJUZyJlaIAAAAAElFTkSuQmCC
 </content>
   </attachment>
   <object>
@@ -178,15 +200,16 @@ CDAAXKlsU7MmdH4AAAAASUVORK5CYII=
     <name>XWikiOrgCode.Skin</name>
     <number>0</number>
     <className>XWiki.XWikiSkins</className>
-    <guid>09ad1136-8451-4380-8ffa-09c2a2a60b66</guid>
+    <guid>5ca0fe12-13d9-4ee1-b35b-6256c8c9bdd6</guid>
     <property>
-      <baseskin>colibri</baseskin>
+      <baseskin>junco</baseskin>
     </property>
     <property>
       <edit.vm/>
     </property>
     <property>
-      <footer.vm>$xwiki.includeForm('xwiki:XWikiOrgCode.Footer',false)</footer.vm>
+      <footer.vm>$xwiki.includeForm('xwiki:XWikiOrgCode.Footer',false)
+</footer.vm>
     </property>
     <property>
       <header.vm>#template('global.vm')
@@ -199,7 +222,17 @@ $xwiki.includeForm('xwiki:XWikiOrgCode.MenuMacro',false)</header.vm>
       <name>New XWiki Skin</name>
     </property>
     <property>
-      <style.css/>
+      <style.css>@import "$xwiki.getSkinFile('themes/blueberry/bootstrap.min.css', true)";
+@import "$xwiki.getSkinFile('legacy.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";
+@import "$xwiki.getSkinFile('junco.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";
+
+.navigation-menu {
+  box-shadow: -42rem 0 0 #172a3d, 42rem 0 0 #172a3d;
+}
+
+.footerContainer {
+  box-shadow: -42rem 0 0 #F7F7F7, 42rem 0 0 #F7F7F7;
+}</style.css>
     </property>
     <property>
       <view.vm/>
