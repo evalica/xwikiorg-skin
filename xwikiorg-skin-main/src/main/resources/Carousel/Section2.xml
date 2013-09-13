@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077659000</creationDate>
-  <date>1379077780000</date>
-  <contentUpdateDate>1379077780000</contentUpdateDate>
+  <creationDate>1378792901000</creationDate>
+  <date>1379082568000</date>
+  <contentUpdateDate>1379082568000</contentUpdateDate>
   <version>1.1</version>
   <title>XWiki Extensions Section</title>
   <defaultTemplate/>
@@ -2332,121 +2332,123 @@ sr6+vhyG4Us3b97cmp+ff+a+++67epTj/R+J7tdP8Wq0EwAAAABJRU5ErkJggg==
 }
 
 .extensions ul {
-  list-style-type: none;
-  margin: 0;
-  position: relative;
-}
-.extensions li {
-  display: inline-block;
-  vertical-align: top;
-  min-height: 90px;
-  position: relative;
-}
-.extensions li:last-child {
-  position: absolute;
-  left: 0; 
-  top: 1.5em;
-  width: 100%;
-}
-.extensions .extension, .extensions .more {
-  background: none no-repeat scroll 50% 50% transparent;
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 0 1.3em;
-  position: relative;
-  z-index: 2;
-  text-align: center;
+  display: none;
 }
 
-.extensions .container  {
-  background-image: url("$doc.getAttachmentURL('none.png')");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  content: "";
-  display: inline-block;
-  opacity: .9;
-  float: left;
-  height: 60px;
-  width: 52px;
-  position: absolute;
-  left: 18px;
-  top: 0;
-  z-index: 1;
+.details {
+  margin-top: 1em;
 }
 
-.extensions .extension a {
-  color: $theme.textSecondaryColor;
-  display: block;
-  font-size: .85em;
-  font-family: sans-serif;
-  font-variant: small-caps;
-  letter-spacing: .025em;
-  padding: 70px 0 5px;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: uppercase;
+.details .extra {
+  display: inline;
 }
 
-.extensions li:hover a{
-  color: $theme.linkColor;
+@media (max-width: 768px) {
+  .details .extra {
+    display: none;
+  }
 }
 
-.extensions li:hover .container {
-  background-image: url("$doc.getAttachmentURL('enterprise.png')");
-}
+@media (min-width: 480px) {
+  .extensions ul {
+    display: block;
+    list-style-type: none;
+    margin: 1.5em 0 0;
+    min-height: 100px;
+    position: relative;
+  }
 
-.extensions .more a {
-  color: $theme.linkColor;
-  font-style: normal;
-  font-size: .9em;
-  padding: 25px 0 25px;
-  text-decoration: none;
-}
+  .extensions li {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 90px;
+    position: relative;
+  }
 
-.extensions .more:hover a{
-  color: $theme.pageContentBackgroundColor;
-}
+  .extensions .extension, .extensions .more {
+    background: none no-repeat scroll 50% 50% transparent;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 1.3em;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
 
-#extension1 {
-  background-image: url("$xwiki.getSkinFile('icons/silk/plugin.png')");
-}
-#extension2 {
-  background-image: url("$xwiki.getSkinFile('icons/silk/application_form_add.png')");
-}
-#extension3 {
-  background-image: url("$xwiki.getSkinFile('icons/silk/application_view_tile.png')");
-}
-#extension4 {
-  background-image: url("$xwiki.getSkinFile('icons/silk/color_wheel.png')");
-}
-#extension5 {
-  background-image: url("$xwiki.getSkinFile('icons/silk/comments.png')");
-}
+  .extensions .extension-container  {
+    background-image: url("$doc.getAttachmentURL('none.png')");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    opacity: .9;
+    float: left;
+    height: 60px;
+    width: 52px;
+    position: absolute;
+    left: 18px;
+    top: 0;
+    z-index: 1;
+  }
 
-.extensions li .details {
-  left: 0px;
-  position: absolute;
-  top: 8em;
+  .extensions .extension a {
+    color: $theme.textSecondaryColor;
+    display: block;
+    font-size: .85em;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    letter-spacing: .025em;
+    padding: 70px 0 5px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+  }
+
+  .extensions li:hover a{
+    color: $theme.linkColor;
+  }
+
+  .extensions li:hover .extension-container {
+    background-image: url("$doc.getAttachmentURL('enterprise.png')");
+  }
+
+  .extensions .more a {
+    color: $theme.linkColor;
+    font-style: normal;
+    font-size: .9em;
+    padding: 25px 0 25px;
+    text-decoration: none;
+  }
+
+  .extensions .more:hover a{
+    color: $theme.pageContentBackgroundColor;
+  }
+
+  #extension1 {
+    background-image: url("$xwiki.getSkinFile('icons/silk/plugin.png')");
+  }
+  #extension2 {
+    background-image: url("$xwiki.getSkinFile('icons/silk/application_form_add.png')");
+  }
+  #extension3 {
+    background-image: url("$xwiki.getSkinFile('icons/silk/application_view_tile.png')");
+  }
+  #extension4 {
+    background-image: url("$xwiki.getSkinFile('icons/silk/color_wheel.png')");
+  }
+  #extension5 {
+    background-image: url("$xwiki.getSkinFile('icons/silk/comments.png')");
+  }
 }
 
 .slide-picture .extensibility {
   background-image: url("$doc.getAttachmentURL('extended.png')");
   background-repeat: no-repeat;
-  background-position: 4em 50%;
+  background-position: 0 50%;
   height: 22em;
-}
-
-/* --------------------------------------------------------------
-  * @group IE8 Hacks
--------------------------------------------------------------- */
-@media \0screen {
- .extensions li .details {
-   top: 9em;
-   position: static;
- }
 }</code>
     </property>
     <property>
@@ -2608,31 +2610,38 @@ sr6+vhyG4Us3b97cmp+ff+a+++67epTj/R+J7tdP8Wq0EwAAAABJRU5ErkJggg==
 $xwiki.ssx.use("$doc.fullName")
 {{/velocity}}
 
+{{comment}}
 {{cache id='section2Cache2' timeToLive='2629743'}}
-(% class='wrap slide' %)(((
-(% class='slide-text' %)(((
+{{/comment}}
+(% class='slide row' %)(((
+(% class='slide-text col-xs-12 col-sm-12 col-md-8' %)(((
 = XWiki Extensions =
 
 == Over 600 extensions: applications, macros, skins, plugins, snippets, etc. ==
 
 (% class='extensions' %)(((
-* (% id='extension1' class='extension' %)[[Extension Manager&gt;&gt;extensions:Extension.Extension Manager Application]] (%class='container'%) (%%)
-* (% id='extension2' class='extension' %)[[AppWithin Minutes&gt;&gt;extensions:Extension.App Within Minutes Application]] (%class='container'%) (%%)
-* (% id='extension3' class='extension' %)[[Dashboard&gt;&gt;extensions:Extension.Dashboard Application]] (%class='container'%) (%%)
-* (% id='extension4' class='extension' %)[[Color Themes&gt;&gt;extensions:Extension.Color Theme Application]] (%class='container'%) (%%)
-* (% id='extension5' class='extension' %)[[Blog&gt;&gt;extensions:Extension.Blog Application]] (%class='container'%) (%%)
-* (% class='more extension' %)[[more&gt;&gt;extensions:Main.WebHome]] (% class='container'%) (%%)
-* (% class='details' %)XWiki is a light and powerful [[development platform&gt;&gt;platform:DevGuide.WebHome]] that allows you to customize the wiki to your specific needs. Using structured data and in-page-scripting you can create [[macros and applications&gt;&gt;extensions:Main.WebHome||queryString="t=extensions&amp;type=xar"]] that allow you to extend the capabilities of your wiki.(%%)
+* (% id='extension1' class='extension' %)[[Extension Manager&gt;&gt;extensions:Extension.Extension Manager Application]] (%class='extension-container'%) (%%)
+* (% id='extension2' class='extension' %)[[AppWithin Minutes&gt;&gt;extensions:Extension.App Within Minutes Application]] (%class='extension-container'%) (%%)
+* (% id='extension3' class='extension' %)[[Dashboard&gt;&gt;extensions:Extension.Dashboard Application]] (%class='extension-container'%) (%%)
+* (% id='extension4' class='extension hidden-xs' %)[[Color Themes&gt;&gt;extensions:Extension.Color Theme Application]] (%class='extension-container'%) (%%)
+* (% id='extension5' class='extension  hidden-xs' %)[[Blog&gt;&gt;extensions:Extension.Blog Application]] (%class='extension-container'%) (%%)
+* (% class='more extension' %)[[more&gt;&gt;extensions:Main.WebHome]] (% class='extension-container'%) (%%)
+
+(% class='details' %)
+(((
+XWiki is a light and powerful [[development platform&gt;&gt;platform:DevGuide.WebHome]] that allows you to customize the wiki to your specific needs. (%class='extra'%)Using structured data and in-page-scripting you can create [[macros and applications&gt;&gt;extensions:Main.WebHome||queryString="t=extensions&amp;type=xar"]] that allow you to extend the capabilities of your wiki.
 )))
 )))
 
-(% class='slide-picture' %)(((
+)))
+
+(% class='slide-picture hidden-xs col-md-4' %)(((
 (% class='extensibility' %)(((
 )))
 )))
 
-(% class='clearfloats' %)((( )))
-)))
-
-(% class='clearfloats' %)((( )))</content>
+{{comment}}
+{{/cache}}
+{{/comment}}
+)))</content>
 </xwikidoc>
