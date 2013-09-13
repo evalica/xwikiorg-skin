@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077401000</creationDate>
-  <date>1379077401000</date>
-  <contentUpdateDate>1379077401000</contentUpdateDate>
+  <creationDate>1379083112000</creationDate>
+  <date>1379083421000</date>
+  <contentUpdateDate>1379083112000</contentUpdateDate>
   <version>1.1</version>
   <title/>
   <defaultTemplate/>
@@ -363,11 +363,6 @@ h1.xwikipaneltitle {
 .wikiexternallink {
   background: url("/xwiki/bin/download/XWiki/XWikiOrgSkinExtension/externallinkicon.gif") no-repeat scroll right center transparent;
   padding-right: 12px;
-}
-
-/* Increase the index to accomodate the navigation menu */
-#mainmenu, #mainmenu.submenu, #maineditmenu, #maineditmenu.submenu {
-  z-index: 1001;
 }</code>
     </property>
     <property>
