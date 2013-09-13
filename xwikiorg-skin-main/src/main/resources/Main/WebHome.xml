@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>Main</web>
+  <name>WebHome</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent/>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1331129520000</creationDate>
+  <date>1379074510000</date>
+  <contentUpdateDate>1379074510000</contentUpdateDate>
+  <version>1.1</version>
+  <title>XWiki - Open Source Wiki and Content-Oriented Application Platform</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <attachment>
+    <filename>XWikiLogo.png</filename>
+    <filesize>1972</filesize>
+    <author>XWiki.Sergiu</author>
+    <date>1301520758000</date>
+    <version>1.1</version>
+    <comment/>
+    <content>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
+</content>
+  </attachment>
+  <attachment>
+    <filename>bg.png</filename>
+    <filesize>157</filesize>
+    <author>XWiki.Admin</author>
+    <date>1331129520000</date>
+    <version>1.6</version>
+    <comment/>
+    <content>iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAG7AAABuwBHnU4NQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAaSURB
+VAiZY/z//z8DAwMDAzMjI6ODg4PDAwA0hATl5emWqQAAAABJRU5ErkJggg==
+</content>
+  </attachment>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>Main.WebHome</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>83b1d810-3c37-4414-9519-1479a1b129a8</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>#template('colorThemeInit.vm')
+
+#if($doc.prefixedFullName == 'xwiki:Main.WebHome')
+  #rightPanels, .viewbody #contentmenu, #document-title, #document-info, #xdocFooter, #hierarchy {
+    display: none;
+  }
+
+  #body.hideleft #contentcolumn .main {
+    margin: 0;
+    padding: 0;
+  }
+
+  #xwikimaincontainerinner {
+    background-color: $theme.pageContentBackgroundColor;
+  }
+
+  #mainContentArea {
+    box-shadow: none;
+    border-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navigation-menu {
+    margin-bottom: 0;
+  }
+
+  #xwikicontent {
+    margin-top: -10px;
+  }
+#end
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}</code>
+    </property>
+    <property>
+      <name>Hidding Colibri Elements</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>Main.WebHome</name>
+    <number>2</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>2c9649ac-9fbe-440b-a574-bfecd4c3868c</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>#template('colorThemeInit.vm')
+
+.homepage-header, .homepage-content {
+  padding: 10px 25px; /* Colibri content values */
+}
+
+/* homepage-header is similar to footerContainer */
+.homepage-header {
+  background-color: #F7F7F7;
+  background-image: url("$doc.getAttachmentURL('bg.png')");
+  border-radius: 0 0 20px 20px;
+  text-shadow: 0 1px 0 $theme.pageContentBackgroundColor;
+  box-shadow: -2px 2px 5px #DEDEDE;
+  border-bottom: 1px solid $theme.pageBackgroundColor;
+  padding-bottom: 0;
+}
+
+.homepage h2 {
+  border: 0;
+  font-size: 1.2em;
+  letter-spacing: .02em;
+}</code>
+    </property>
+    <property>
+      <name>Homepage Layout</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>Main.WebHome</name>
+    <number>3</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>3efdb715-616c-4355-bf23-02bbecfedf11</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>{{velocity}}
+{{cache id='fontCache' timeToLive='2629743'}}
+$xwiki.linkx.use('http://fonts.googleapis.com/css?family=Open+Sans', {'rel': 'stylesheet', 'type': 'text/css'})
+$xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'stylesheet', 'type': 'text/css'})
+{{/cache}}
+{{/velocity}}
+
+.slide h1, 
+.homepage h2
+/*, .footerColumn h2 */ {
+  font-family: 'Lustria', Georgia, serif;
+}
+
+.latestposts .entry-summary, .poweredBy .description, .heartbeat dt, .slide-text
+/*, .footerColumn ul */ {
+  font-family: 'Open Sans','Lucida Grande','Lucida Sans Unicode',Verdana,Helvetica,Arial,sans-serif;
+}
+
+.poweredBy .website, .latestposts .hentry h3 {
+  font-family: 'Lustria', Georgia, serif;
+  font-weight: 400;
+  font-size: 1em !important;
+}
+
+.poweredBy .author p, .latestposts .entry-metadata, .heartbeat dd , .poweredBy .more{
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+}
+</code>
+    </property>
+    <property>
+      <name>Typography</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>Main.WebHome</name>
+    <number>4</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>c85b25c7-b4e1-445a-9762-9255867b02da</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>/* --------------------------------------------------------------
+  * @group Layout
+-------------------------------------------------------------- */
+
+.homepage-content .latestpostsContainer, .homepage-content .poweredByContainer, .homepage-content .heartbeatContainer {
+  float: left;
+  padding-left: 0.75%;
+  padding-right: 0.75%;
+}
+
+.homepage-content .poweredByContainer {
+  padding-left: 0;
+  z-index: 2;
+}
+
+.homepage-content .heartbeatContainer {
+  padding-right: 0;
+}
+
+@media (max-width:1024px) {
+  .homepage-content .latestpostsContainer {
+    width: 48.9%;
+  }
+
+  .homepage-content .poweredByContainer, .homepage-content .heartbeatContainer {
+    width: 24%;
+  }
+}
+
+@media (min-width:1024px) {
+  .homepage-content .latestpostsContainer {
+    padding: 0 250px 0 23.5%;
+  }
+
+  .homepage-content .poweredByContainer, .homepage-content .heartbeatContainer {
+    position: absolute;
+  }
+
+  .homepage-content .poweredByContainer{
+    margin-right: -24%;
+    width: 21%;
+  }
+
+  .homepage-content .heartbeatContainer { 
+    margin-left: -250px;
+    right: 0;
+    width: 250px;
+  }
+}
+
+/* --------------------------------------------------------------
+  * @group Latest Blog Posts
+-------------------------------------------------------------- */
+@media (max-width:1360px) {
+  .latestpostsContainer {
+    height: 26em;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width:1360px) {
+  .homepage-content .latestposts .entry-summary {
+    max-height: 5.5em;
+  }
+
+  .homepage-content .latestposts .entry-summary * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .latestpostsContainer {
+    height: 29em;
+  }
+}
+
+@media \0screen { /* IE8 hack since it doesn't have support for media queries */
+  .latestpostsContainer {
+    height: 27em;
+  }
+}
+
+@media (min-width:1800px) {
+  .latestpostsContainer {
+    height: 28.5em;
+  }
+}
+
+/* --------------------------------------------------------------
+  * @group Powered By
+-------------------------------------------------------------- */
+@media (min-width:1360px) {
+  .homepage-content .poweredBy .description {
+    max-height: 5.5em;
+  }
+}
+
+/* --------------------------------------------------------------
+  * @group Carousel
+-------------------------------------------------------------- */
+@media (max-width:1024px) {
+  .slide .slide-picture .screenshots {
+    background-position: 0% 50%;
+  }
+  .slide .slide-picture .downloadButton {
+    left: 13em;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .carouselcontainer .projects, .carouselcontainer .extensions {
+    margin-top: 3%;
+  }
+  .carouselcontainer .extensions li .details, .carouselcontainer .projects li .details {
+    top: 9em;
+  }
+
+}
+
+@media (min-width:1025px) {
+  .carouselcontainer .projects li .details {
+    width: 140%;
+  }
+}
+
+@media (min-width:1361px) {
+  .carouselcontainer .projects li .details {
+    width: 176%;
+  }
+}
+
+@media (min-width:1681px) {
+  .carouselcontainer .projects li .details {
+    width: 210%;
+  }
+}
+
+/* --------------------------------------------------------------
+  * @group IE8 Hacks
+-------------------------------------------------------------- */
+@media \0screen {
+ .homepage-content .poweredByContainer, .homepage-content .heartbeatContainer {
+    width: 250px;
+  }
+ .homepage-content .latestpostsContainer {
+    margin-left: 270px;
+    margin-right: 280px;
+    position: absolute;
+  }
+  .homepage-content .heartbeatContainer {
+   position: absolute;
+   right: 0;
+  }
+}</code>
+    </property>
+    <property>
+      <name>Media Queries</name>
+    </property>
+    <property>
+      <parse/>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.XWikiRights</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <allow>
+        <defaultValue>1</defaultValue>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>allow</displayType>
+        <name>allow</name>
+        <number>4</number>
+        <prettyName>Allow/Deny</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </allow>
+      <groups>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>input</displayType>
+        <multiSelect>1</multiSelect>
+        <name>groups</name>
+        <number>1</number>
+        <picker>1</picker>
+        <prettyName>Groups</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <size>5</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.GroupsClass</classType>
+      </groups>
+      <levels>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>1</multiSelect>
+        <name>levels</name>
+        <number>2</number>
+        <prettyName>Levels</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <size>3</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.LevelsClass</classType>
+      </levels>
+      <users>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>input</displayType>
+        <multiSelect>1</multiSelect>
+        <name>users</name>
+        <number>3</number>
+        <picker>1</picker>
+        <prettyName>Users</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <size>5</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.UsersClass</classType>
+      </users>
+    </class>
+    <name>Main.WebHome</name>
+    <number>0</number>
+    <className>XWiki.XWikiRights</className>
+    <guid>5eb5a7c6-7d10-496e-a980-d0b14e447f3d</guid>
+    <property>
+      <allow>1</allow>
+    </property>
+    <property>
+      <groups>XWiki.XWikiAdminGroup</groups>
+    </property>
+    <property>
+      <levels>comment,edit,delete</levels>
+    </property>
+  </object>
+  <content>{{velocity}}
+$xwiki.ssx.use("$doc.fullName")
+#set($docextras = [])
+{{/velocity}}
+
+(% class='homepage'%)(((
+
+(% class='homepage-header'%)(((
+{{include document="Carousel.Slider" /}}
+)))
+
+(% class='homepage-content'%)(((
+((({{include document="XWikiOrgCode.PoweredBy"/}})))
+((({{include document="XWikiOrgCode.LatestBlogPosts"/}})))
+((({{include document="XWikiOrgCode.Heartbeat"/}})))
+)))
+)))</content>
+</xwikidoc>
