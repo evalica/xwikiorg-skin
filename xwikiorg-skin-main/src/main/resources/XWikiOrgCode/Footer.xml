@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077659000</creationDate>
-  <date>1379077659000</date>
-  <contentUpdateDate>1379077659000</contentUpdateDate>
+  <creationDate>1378792901000</creationDate>
+  <date>1379056862000</date>
+  <contentUpdateDate>1379056862000</contentUpdateDate>
   <version>1.1</version>
   <title>Footer Section</title>
   <defaultTemplate/>
@@ -173,84 +173,53 @@ bKAjElpAUbq66HPCn36ir4OamohQzP6wdZ7ZF2axmWTXWT12vWeZJTmIuIoyb97atYBe/9hjWn5O
       <cache>long</cache>
     </property>
     <property>
-      <code>#template('colorThemeInit.vm')
-
-/* @group COLIBRI */
-/* --------------------------------------------------------------
-  * Reseting Colibri rules
--------------------------------------------------------------- */
-#contentcontainer {
-  border: none;
-}
-
-/* @group FOOTER */
+      <code>/* @group FOOTER */
 /* --------------------------------------------------------------
   * Sets the styles for footer columns
 -------------------------------------------------------------- */
-
 .footerContainer .wikiexternallink {
   padding: 0;
   background-image: none;
 }
 
-/* homepage-header is similar to footerContainer */
 .footerContainer {
   background-color: #F7F7F7;
-  box-shadow: 5px -2px 5px #ECECEC;
-  border-radius: 20px 20px 0 0;
-  border-top: 1px solid #ECECEC;
-  font-size: .85em;  /* link text size should be 11.9px */
-  padding: 2em 1em 1em;
-  text-shadow: 0 1px 0 $theme.pageContentBackgroundColor;
-}
-
-.footerContainerInner {
-  margin: auto;
-  text-align: left;
+  font-size: .9em; 
 }
 
 .footerSection {
   float: left;
-  padding: 0 .7em;
 }
 
 .footerGroup {
   float: left;
-  margin: 0 .7em 0 0 ;
+  margin: 0 2em 0 0 ;
 }
 
 .footerSection h2 {
-  border: 0;
-  font-size: 1.41em; /* aprox. 16.8px */
-  letter-spacing: .02em;
-  margin: 0 0 1em;
+  font-size: 1.41em; 
+  font-weight: 300;
 }
 
-.footerGroup h3, .footerVersion {
-  border: 0;
-  color: $theme.textPrimaryColor;
-  font-size: 1.1em;
+.footerGroup h3 {
+  font-size: 1.3em;
   font-variant: small-caps;
-  letter-spacing: .02em;
-  margin: -.1em 0 0;
+  margin: 0;
   text-transform: lowercase;  
 }
 
-.footerGroup h3 * {
-  line-height: 1em;
+.footerSection h2, 
+.footerGroup h3 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
 }
 
 .footerGroup ul {
   list-style-type: none;
   padding: 0 0 1em;
   margin: 0;
-  font-size: 0.94em; /* aprox. 11.2px */
+  font-size: 0.94em;
 } 
-
-.footerVersion {
-  margin: 0 auto -1em;
-  text-align: center;
-}
 
 /* @end FOOTER */
 
@@ -262,7 +231,7 @@ bKAjElpAUbq66HPCn36ir4OamohQzP6wdZ7ZF2axmWTXWT12vWeZJTmIuIoyb97atYBe/9hjWn5O
   background: url("$doc.getAttachmentURL('social.png')") no-repeat top left;
   float: left;
   height: 16px;
-  margin: 0 .5em 0 0;
+  margin: .5em .5em 0 0;
   width: 16px;
 }
 
@@ -277,7 +246,28 @@ bKAjElpAUbq66HPCn36ir4OamohQzP6wdZ7ZF2axmWTXWT12vWeZJTmIuIoyb97atYBe/9hjWn5O
 .icon.google { background-position: -78px 0;  } 
 .icon.twitter { background-position: -104px 0;  } 
 
-/* @end SOCIAL */</code>
+/* @end SOCIAL */
+
+#footerglobal {
+  font-size: 90%;
+}
+
+#footerglobal, #footerglobal h3 {
+  color: #fff;
+}
+
+#footerglobal p {
+  margin: 0;
+}
+
+.logoGroup img {
+  margin-right: 1em;
+}
+
+.versionGroup ul {
+  margin: 0;
+  list-style-type: none;
+}</code>
     </property>
     <property>
       <name>Footer Style</name>
@@ -289,322 +279,23 @@ bKAjElpAUbq66HPCn36ir4OamohQzP6wdZ7ZF2axmWTXWT12vWeZJTmIuIoyb97atYBe/9hjWn5O
       <use>onDemand</use>
     </property>
   </object>
-  <object>
-    <class>
-      <name>XWiki.StyleSheetExtension</name>
-      <customClass/>
-      <customMapping/>
-      <defaultViewSheet/>
-      <defaultEditSheet/>
-      <defaultWeb/>
-      <nameField/>
-      <validationScript/>
-      <cache>
-        <cache>0</cache>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>cache</name>
-        <number>5</number>
-        <prettyName>Caching policy</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <unmodifiable>0</unmodifiable>
-        <values>long|short|default|forbid</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </cache>
-      <code>
-        <disabled>0</disabled>
-        <name>code</name>
-        <number>2</number>
-        <prettyName>Code</prettyName>
-        <rows>20</rows>
-        <size>50</size>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </code>
-      <name>
-        <disabled>0</disabled>
-        <name>name</name>
-        <number>1</number>
-        <prettyName>Name</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </name>
-      <parse>
-        <disabled>0</disabled>
-        <displayFormType>select</displayFormType>
-        <displayType>yesno</displayType>
-        <name>parse</name>
-        <number>4</number>
-        <prettyName>Parse content</prettyName>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
-      </parse>
-      <use>
-        <cache>0</cache>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>use</name>
-        <number>3</number>
-        <prettyName>Use this extension</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <unmodifiable>0</unmodifiable>
-        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </use>
-    </class>
-    <name>XWikiOrgCode.Footer</name>
-    <number>1</number>
-    <className>XWiki.StyleSheetExtension</className>
-    <guid>6d0e4656-55cf-46c2-ae7a-0472332b1dad</guid>
-    <property>
-      <cache>long</cache>
-    </property>
-    <property>
-      <code>/* rules present here because the footer is available not just on the homepage but also in the rest of the pages */
-/* be carefull to import the fonts in a global stylesheet */
-
-/*
-{{velocity}}
-$xwiki.linkx.use('http://fonts.googleapis.com/css?family=Open+Sans', {'rel': 'stylesheet', 'type': 'text/css'})
-$xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'stylesheet', 'type': 'text/css'})
-{{/velocity}}
-*/
-
-.footerSection h2 {
-  font-family: 'Lustria', Georgia, serif;
-}
-
-.footerGroup ul {
-  font-family: 'Open Sans','Lucida Grande',Verdana,Helvetica,Arial,sans-serif;
-}
-</code>
-    </property>
-    <property>
-      <name>Typography</name>
-    </property>
-    <property>
-      <parse>1</parse>
-    </property>
-    <property>
-      <use>onDemand</use>
-    </property>
-  </object>
-  <object>
-    <class>
-      <name>XWiki.StyleSheetExtension</name>
-      <customClass/>
-      <customMapping/>
-      <defaultViewSheet/>
-      <defaultEditSheet/>
-      <defaultWeb/>
-      <nameField/>
-      <validationScript/>
-      <cache>
-        <cache>0</cache>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>cache</name>
-        <number>5</number>
-        <prettyName>Caching policy</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <unmodifiable>0</unmodifiable>
-        <values>long|short|default|forbid</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </cache>
-      <code>
-        <disabled>0</disabled>
-        <name>code</name>
-        <number>2</number>
-        <prettyName>Code</prettyName>
-        <rows>20</rows>
-        <size>50</size>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
-      </code>
-      <name>
-        <disabled>0</disabled>
-        <name>name</name>
-        <number>1</number>
-        <prettyName>Name</prettyName>
-        <size>30</size>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
-      </name>
-      <parse>
-        <disabled>0</disabled>
-        <displayFormType>select</displayFormType>
-        <displayType>yesno</displayType>
-        <name>parse</name>
-        <number>4</number>
-        <prettyName>Parse content</prettyName>
-        <unmodifiable>0</unmodifiable>
-        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
-      </parse>
-      <use>
-        <cache>0</cache>
-        <disabled>0</disabled>
-        <displayType>select</displayType>
-        <multiSelect>0</multiSelect>
-        <name>use</name>
-        <number>3</number>
-        <prettyName>Use this extension</prettyName>
-        <relationalStorage>0</relationalStorage>
-        <separator> </separator>
-        <separators> ,|</separators>
-        <size>1</size>
-        <unmodifiable>0</unmodifiable>
-        <values>currentPage=Always on this page|onDemand=On demand|always=Always on this wiki</values>
-        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
-      </use>
-    </class>
-    <name>XWikiOrgCode.Footer</name>
-    <number>2</number>
-    <className>XWiki.StyleSheetExtension</className>
-    <guid>19e5b655-83c0-44ed-be44-8f8bc62f4258</guid>
-    <property>
-      <cache>long</cache>
-    </property>
-    <property>
-      <code>.footerGroup {
-  min-width: 7.3em;
-}
-
-.sectionContribute .footerGroup {
-  min-width: 9em;
-}
-
-.sectionPlatform .footerGroup  {
-  min-width: 10em;
-}
-
-.groupEnterprise, .groupManager {
-  min-width: 9em;
-}
-
-.groupPractices {
-  max-width: 9em;
-}
-
-.sectionSupport {
-  width: 11%;
-}
-
-.sectionPlatform {
-  min-width: 120px;
-  width: 10%;
-}
-
-.sectionProjects {
-  width: 32%;
-}
-
-.sectionContribute {
-  width: 25%;
-}
-
-@media (max-width:1024px) {
-  .footerContainerInner {
-    width: 970px;
-  }
-}
-
-@media (min-width:1025px) {
-  .footerContainerInner {
-    width: 970px;
-  }
-}
-
-@media (min-width:1400px) {
-  .footerContainerInner {
-    width: auto;
-    margin: 0 2.5% 0 3%;
-  }
-  .footerGroup {
-    min-width: 7em;
-  }
-
-  .sectionAbout {
-    width: 5%;
-  }
-  .sectionProjects {
-    width: 38%;
-  }
-  .sectionContribute {
-    width: 29.5%;
-  }
-      .sectionContribute .footerGroup {
-        min-width: 8em;
-      }
-  .sectionPlatform {
-    width: 14%;
-  }
-      .sectionPlatform .footerGroup {
-        min-width: 8em;
-      }
-      .sectionPlatform .adminGroup {
-        min-width: 6em;
-      }
-  .sectionSupport {
-    width: 7%;
-  }
-}
-
-@media (min-width:1681px) {
-  .footerContainerInner {
-    width: auto;
-    margin: 0 7%;
-  }
-  .sectionProjects {
-    width: 36%;
-  }
-  .sectionPlatform {
-    width: 19%;
-  }
-  .sectionContribute {
-    width: 28%;
-  }
-  .sectionSupport {
-    width: 6%;
-  }
-}</code>
-    </property>
-    <property>
-      <name>Media queries</name>
-    </property>
-    <property>
-      <parse/>
-    </property>
-    <property>
-      <use>onDemand</use>
-    </property>
-  </object>
   <content>{{velocity}}
 #set($discard = $xwiki.ssx.use('xwiki:XWikiOrgCode.Footer'))
 {{/velocity}}
 
-{{cache id='footerCache4' timeToLive='2629743'}}
-(% class='footerContainer' %)
+{{comment}}
+{{cache id='footerCache2' timeToLive='2629743'}}
+{{/comment}}
+(% class='footerContainer container' %)
 (((
-(% class='footerContainerInner' %)
+(% class='row' %)
 (((
-(% class='footerSection sectionAbout' %)
+(% class='col-xs-12 col-md-2 footerSection sectionAbout' %)
 (((
 == About ==
 (% class='footerGroup' %)
 (((
+  === About ===
     * [[News &amp; Blog&gt;&gt;xwiki:Main.News]]
     * [[References&gt;&gt;xwiki:References.WebHome]]
     * [[Testimonials&gt;&gt;xwiki:References.Testimonials]]
@@ -612,10 +303,24 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[Media Resources&gt;&gt;xwiki:Main.Media]]
     * [[Sponsors&gt;&gt;xwiki:Main.Supporters]]
 )))
+(% class='footerGroup' %)
+(((
+  === Support ===
+    * [[Overview&gt;&gt;xwiki:Main.Support]]
+    * [[Documentation&gt;&gt;xwiki:Main.ProductDocumentation]]
+    * [[FAQs&gt;&gt;xwiki:FAQ.WebHome]]
+    * [[Mailing Lists&gt;&gt;dev:Community.MailingLists]]
+    * [[IRC and Jabber&gt;&gt;dev:Community.IRC]]
+    * [[Professional Support&gt;&gt;xwiki:Main.Support||anchor='HProfessionalSupport']]
 )))
-(% class='footerSection sectionContribute' %)
+)))
+(% class='col-xs-12 col-md-4 footerSection' %)
 (((
 == Projects ==
+(% class='row'%)
+(((
+(% class='col-md-6 sectionProjects' %)
+(((
 (% class='footerGroup groupEnterprise' %)
 (((
   === XWiki Enterprise ===
@@ -625,16 +330,6 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[Roadmap&gt;&gt;enterprise:Main.Roadmap]]
     * [[Release Notes&gt;&gt;xwiki:ReleaseNotes.WebHome||anchor='HXWikiEnterprise']]
     * [[Download&gt;&gt;enterprise:Main.Download]]
-)))
-(% class='footerGroup' %)
-(((
-  === Extensions ===
-    * [[All extensions&gt;&gt;extensions:Main.WebHome]]
-    * [[Applications&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=xar']]
-    * [[Code Snippets&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=snippet']]
-    * [[Components&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=jar']]
-    * [[Macros&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=velocimacro']]
-    * [[Skins&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=skin']]
 )))
 (% class='footerGroup groupManager' %)
 (((
@@ -646,6 +341,19 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[Release Notes&gt;&gt;xwiki:ReleaseNotes.WebHome||anchor='HXWikiEnterpriseManager']]
     * [[Download&gt;&gt;manager:Main.Download]]
 )))
+)))
+(% class='col-md-6 sectionProjects' %)
+(((
+(% class='footerGroup' %)
+(((
+  === Extensions ===
+    * [[All extensions&gt;&gt;extensions:Main.WebHome]]
+    * [[Applications&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=xar']]
+    * [[Code Snippets&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=snippet']]
+    * [[Components&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=jar']]
+    * [[Macros&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=velocimacro']]
+    * [[Skins&gt;&gt;extensions:Main.WebHome||anchor='|t=extensions&amp;type=skin']]
+)))
 (% class='footerGroup' %)
 (((
     === Other ===
@@ -654,7 +362,9 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[XWiki Commons&gt;&gt;commons:Main.WebHome]]
 )))
 )))
-(% class='footerSection sectionPlatform' %)
+)))
+)))
+(% class='col-xs-12 col-md-2 footerSection sectionPlatform' %)
 (((
 == Platform ==
 (% class='footerGroup' %)
@@ -681,9 +391,13 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[Tutorials and Guides&gt;&gt;platform:DevGuide.WebHome||anchor='HTutorialsandGuides']]
 )))
 )))
-(% class='footerSection sectionContribute' %)
+(% class='col-xs-12 col-md-4 footerSection' %)
 (((
 == Contribute ==
+(% class='row'%)
+(((
+(% class='col-md-6 sectionContribute' %)
+(((
 (% class='footerGroup' %)
 (((
   === Status ===
@@ -694,16 +408,6 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[Hall Of Fame&gt;&gt;dev:Community.HallOfFame]]
     * [[Browser Support&gt;&gt;dev:Community.BrowserSupportStrategy]]
 )))
-(% class='footerGroup' %)
-(((
-  === Under the Hood ===
-    * [[Source Repository&gt;&gt;dev:Community.SourceRepository]]
-    * [[Building&gt;&gt;dev:Community.Building]]
-    * [[Continuous build&gt;&gt;dev:Community.ContinuousBuild]]
-    * [[Testing&gt;&gt;dev:Community.Testing]]
-    * [[Debugging&gt;&gt;dev:Community.Debugging]]
-    * [[Profiling&gt;&gt;dev:Community.Profiling]]
-)))
 (% class='footerGroup groupPractices' %)
 (((
   === Practices ===
@@ -713,6 +417,19 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[Development Tools&gt;&gt;dev:Community.DevelopmentTools]]
     * [[UX Guidelines&gt;&gt;dev:UserExperience.WebHome]]
     * [[Design Proposals&gt;&gt;dev:Design.WebHome]]
+)))
+)))
+(% class='col-md-6 sectionContribute' %)
+(((
+(% class='footerGroup' %)
+(((
+  === Under the Hood ===
+    * [[Source Repository&gt;&gt;dev:Community.SourceRepository]]
+    * [[Building&gt;&gt;dev:Community.Building]]
+    * [[Continuous build&gt;&gt;dev:Community.ContinuousBuild]]
+    * [[Testing&gt;&gt;dev:Community.Testing]]
+    * [[Debugging&gt;&gt;dev:Community.Debugging]]
+    * [[Profiling&gt;&gt;dev:Community.Profiling]]
 )))
 (% class='footerGroup' %)
 (((
@@ -726,19 +443,32 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
     * [[Share code&gt;&gt;https://github.com/xwiki]]
 )))
 )))
-(% class='footerSection sectionSupport' %)
-(((
-== Support ==
-(% class='footerGroup' %)
-(((
-    * [[Overview&gt;&gt;xwiki:Main.Support]]
-    * [[Documentation&gt;&gt;xwiki:Main.ProductDocumentation]]
-    * [[FAQs&gt;&gt;xwiki:FAQ.WebHome]]
-    * [[Mailing Lists&gt;&gt;dev:Community.MailingLists]]
-    * [[IRC and Jabber&gt;&gt;dev:Community.IRC]]
-    * [[Professional Support&gt;&gt;xwiki:Main.Support||anchor='HProfessionalSupport']]
 )))
-(% class='footerGroup' %)
+)))
+)))
+)))
+
+(%id='footerglobal' class='container'%)
+(((
+(% class='row' %)
+(((
+(% class='col-xs-7  col-md-10' %)
+(((
+{{velocity}}
+(% class='logoGroup hidden-xs hidden-sm' %)
+(((
+[[image:path:$xwiki.getSkinFile('logo-xs.png')||width='36' height='36' class='pull-left']]
+)))
+(% class='versionGroup pull-left' %)
+(((
+* {{html}}$copyright{{/html}}
+* Powered by XWiki $xwiki.version
+)))
+{{/velocity}}
+)))
+(% class='col-xs-5  col-md-2 pull-right' %)
+(((
+(% class='footerGroup connectGroup' %)
 (((
   === Get Connected ===
 (% class='social' %)(((
@@ -748,12 +478,9 @@ $xwiki.linkx.use('http://fonts.googleapis.com/css?family=Lustria', {'rel': 'styl
   )))
 )))
 )))
-(% class='clearfloats' %)((()))
-
-(%class='centered footerVersion'%)(((
-Powered by XWiki Enterprise {{velocity}}$xwiki.version{{/velocity}}
 )))
-
 )))
-{{/cache}}</content>
+{{comment}}
+{{/cache}}
+{{/comment}}</content>
 </xwikidoc>
