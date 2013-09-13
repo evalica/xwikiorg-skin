@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077659000</creationDate>
-  <date>1379077659000</date>
-  <contentUpdateDate>1379077659000</contentUpdateDate>
+  <creationDate>1378792901000</creationDate>
+  <date>1379070564000</date>
+  <contentUpdateDate>1378792901000</contentUpdateDate>
   <version>1.1</version>
   <title>XWiki.org Menu Macro</title>
   <defaultTemplate/>
@@ -105,29 +105,8 @@
       <code>#template('colorThemeInit.vm')
 
 .navigation-menu {
-  height: 2em;
-  background: #414242; /* Old browsers */  
-	background: /* Opera 11.10+ */
-		-o-linear-gradient(top, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%),
-		-o-linear-gradient(left, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) .2%, rgba(0, 0, 0, 0) 99.8%, rgba(0, 0, 0, .2) 100%),
-		-o-linear-gradient(bottom, #414242 0, #45484d 50%, #707070 51%, #808080 100%)
-	;
-	background: /* FF3.6+ */
-		-moz-linear-gradient(top, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%),
-		-moz-linear-gradient(left, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) .2%, rgba(0, 0, 0, 0) 99.8%, rgba(0, 0, 0, .2) 100%),
-		-moz-linear-gradient(bottom, #414242 0, #45484d 50%, #707070 51%, #808080 100%)
-	;
-	background: /* Chrome10+,Safari5.1+ */
-		-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
-		-webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))),
-		-webkit-gradient(linear, 0 100%, 0 0, from(#414242), color-stop(0.5, #45484d), color-stop(0.51, #707070), to(#808080))
-	;
-  background: -ms-linear-gradient(top, #414242 0,#45484d 50%,#808080 100%); /* IE10+ */
-  background: linear-gradient(top, #414242 0,#45484d 50%,#808080 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#414242',GradientType=0 ); /* IE6-9 */
-  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
-  padding-left: 25px;
-  margin: -16px 0 1em 0; /* 16px value taken from colibri.css */
+  background: #172a3d;
+  padding-left: 15px;
 }
 
 .navigation-menu a {
@@ -141,30 +120,26 @@
 }
 
 .navigation-menu a[href='#']:after {
-  content: '\25BC';
-  font-size: .8em;
   margin-left: .5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 0 dotted;
+  content: "";
 }
 
 .navigation-menu ul {
-  border-color: $theme.menuBackgroundColor;
-  border-style: solid;
-  border-width: 0 0 0 1px;
   margin: 0;
 }
 
-.navigation-menu &gt; ul{
-  font-size: .85em;
+.navigation-menu &gt; ul {
 }
 
 .navigation-menu ul li {
-  border-color: $theme.menuBackgroundColor;
-  border-style: solid;
-  border-width: 0 1px 0 0;
   display: inline-block;
-  *float: left; /* IE7 */
   position: relative;
-  z-index: 1000; /* IE7 */
 }
 
 .navigation-menu ul li:hover {
@@ -173,7 +148,8 @@
 
 .navigation-menu ul li ul {
   background-color: $theme.menuBackgroundColor;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
   display: none;
   top: 2.2em;
   left: 0;
@@ -204,6 +180,16 @@
   display: block;
   line-height: 1px;
   margin: 2px 1em;
+}
+
+#mainmenu, #mainmenu .submenu {
+  z-index: 1001;
+}
+
+#contentmenu, #contentmenu .submenu, 
+#contenteditmenu, #contenteditmenu .submenu, 
+#editmenu, #edimenu .submenu {
+  z-index: 998;
 }</code>
     </property>
     <property>
@@ -589,10 +575,13 @@
       <allow>1</allow>
     </property>
     <property>
-      <groups>XWiki.XWikiAdminGroup</groups>
+      <groups>xwiki:XWiki.XWikiAdminGroup,</groups>
     </property>
     <property>
       <levels>view</levels>
+    </property>
+    <property>
+      <users/>
     </property>
   </object>
   <object>
@@ -669,10 +658,13 @@
       <allow>1</allow>
     </property>
     <property>
-      <groups>XWiki.XWikiAllGroup</groups>
+      <groups>xwiki:XWiki.XWikiAllGroup,</groups>
     </property>
     <property>
       <levels>view</levels>
+    </property>
+    <property>
+      <users/>
     </property>
   </object>
   <object>
@@ -749,10 +741,13 @@
       <allow>1</allow>
     </property>
     <property>
-      <groups>XWiki.XWikiCommittersGroup</groups>
+      <groups>XWiki.XWikiCommittersGroup,</groups>
     </property>
     <property>
       <levels>view</levels>
+    </property>
+    <property>
+      <users/>
     </property>
   </object>
   <object>
@@ -829,10 +824,13 @@
       <allow>1</allow>
     </property>
     <property>
-      <groups>XWiki.XWikiPowerUsers</groups>
+      <groups>XWiki.XWikiPowerUsers,</groups>
     </property>
     <property>
       <levels>view</levels>
+    </property>
+    <property>
+      <users/>
     </property>
   </object>
   <content>{{velocity}}
