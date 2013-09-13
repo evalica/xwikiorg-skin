@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077659000</creationDate>
-  <date>1379077706000</date>
-  <contentUpdateDate>1379077706000</contentUpdateDate>
+  <creationDate>1378792900000</creationDate>
+  <date>1378899820000</date>
+  <contentUpdateDate>1378899820000</contentUpdateDate>
   <version>1.1</version>
   <title>Latest Blog Posts Section</title>
   <defaultTemplate/>
@@ -99,7 +99,7 @@
     <className>XWiki.StyleSheetExtension</className>
     <guid>0d94bdea-988b-441c-84c1-b3c1062488b0</guid>
     <property>
-      <cache>long</cache>
+      <cache>short</cache>
     </property>
     <property>
       <code>#template('colorThemeInit.vm')
@@ -108,9 +108,9 @@ a.latestPostsHeader {
   color: $theme.textColor;
 }
 
-.latestpostsContainer {
+.latestposts {
+  max-height: 21em;
   overflow: hidden;
-  position: relative;
 }
 
 .latestposts .hentry {
@@ -132,6 +132,11 @@ a.latestPostsHeader {
   color: $theme.textSecondaryColor;
   font-size: 0.93em; /* aprox. 13px */
   line-height: 1.4em;
+}
+
+.latestposts .entry-metadata address {
+  display: inline-block;
+  margin: 0;
 }
 
 .latestposts .entry-summary {
@@ -318,7 +323,7 @@ a.latestPostsHeader {
     <guid>bc3b7be6-043d-4d75-864e-25446c64e2c0</guid>
     <property>
       <code>{{include document="xwiki:Blog.BlogCode"/}}{{velocity output='false'}}
-$xwiki.ssx.use('xwiki:XWikiOrgCode.LatestBlogPosts')
+#set($discard =$xwiki.ssx.use('xwiki:XWikiOrgCode.LatestBlogPosts'))
 #**
 * Displays the metadatas of the entry (author + date).
 *
@@ -385,11 +390,8 @@ $xwiki.ssx.use('xwiki:XWikiOrgCode.LatestBlogPosts')
 #end
 #set($blogDoc = $xwiki.getDocument('xwiki:Blog.BlogSheet' ))
 #getBlogEntries($blogDoc $entries)
-{{/velocity}}{{velocity}}
-{{cache id='latestBlogPostsCache4' timeToLive='604800'}}
-#displayBlog($entries 'latestposts' true true)
-{{/cache}}
-{{/velocity}}</code>
+{{/velocity}}{{velocity}}{{comment}}{{cache id='latestBlogPostsCache3' timeToLive='604800'}}{{/comment}}#displayBlog($entries 'latestposts' true true)
+{{comment}}{{/cache}}{{/comment}}{{/velocity}}</code>
     </property>
     <property>
       <contentDescription/>
@@ -419,7 +421,6 @@ $xwiki.ssx.use('xwiki:XWikiOrgCode.LatestBlogPosts')
   <content>(% class='latestpostsContainer' %)
 (((
 == [[Latest Blog Posts&gt;&gt;xwiki:Blog.WebHome||class='latestPostsHeader' title='Read more news']] {{velocity}}[[image:icon:bullet_feed&gt;&gt;path:$xwiki.getURL("Blog.GlobalBlogRss", "view", "xpage=plain")||title='RSS feed']]{{/velocity}} ==
-
 {{latestBlogPosts /}}
 (% class='gradientEnding'%)((()))
 )))</content>
