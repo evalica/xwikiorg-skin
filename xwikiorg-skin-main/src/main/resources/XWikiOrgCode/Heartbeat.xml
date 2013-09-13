@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077658000</creationDate>
-  <date>1379077658000</date>
-  <contentUpdateDate>1379077658000</contentUpdateDate>
+  <creationDate>1378792900000</creationDate>
+  <date>1378893056000</date>
+  <contentUpdateDate>1378892128000</contentUpdateDate>
   <version>1.1</version>
   <title>Heartbeat Section</title>
   <defaultTemplate/>
@@ -106,8 +106,13 @@
   font-size: .85em;
 }
 
+.heartbeat dl {
+  margin-bottom: 0;
+}
+
 .heartbeat dt {
   font-weight: 400;
+  margin-top: 1em;
 }
 
 .heartbeat .value {
@@ -430,7 +435,9 @@
 #set($discard = $xwiki.ssx.use('xwiki:XWikiOrgCode.Heartbeat'))
 {{/velocity}}
 
+{{comment}}
 {{cache id='heartbeatCache7' timeToLive='604800'}}
+{{/comment}}
 (% class='heartbeatContainer' %)
 (((
 == Community Heartbeat ==
@@ -444,7 +451,7 @@
 ; (%class='value'%)95(%%) [[contributors&gt;&gt;dev:Community.HallOfFame]] {{comment}} Very hard to calculate: a combination of https://www.ohloh.net/p/xwiki/commits/summary + contributors from dev:Community.HallOfFame {{/comment}}
 : 23 active commiters last year {{comment}} Relative again by what we consider to be active {{/comment}}
 
-{{contributors /}}
+{{comment}}{{contributors /}}{{/comment}}
 
 ; (%class='value'%)550+(%%) [[extensions&gt;&gt;extensions:Main.WebHome]] {{comment}} http://extensions.xwiki.org/xwiki/bin/view/Main/WebHome#|t=extensions {{/comment}}
 : with over 100 applications {{comment}} http://extensions.xwiki.org/xwiki/bin/view/Main/WebHome#|t=extensions&amp;name=Application {{/comment}}
@@ -454,5 +461,7 @@
 : 5,935 discussions last year {{comment}} http://xwiki.markmail.org/search/?q=date%3A2012+AND+%28+list%3Aorg.xwiki.devs+OR+list%3Aorg.xwiki.users+%29 {{/comment}}
 )))
 )))
-{{/cache}}</content>
+{{comment}}
+{{/cache}}
+{{/comment}}</content>
 </xwikidoc>
