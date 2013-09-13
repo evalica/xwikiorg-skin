@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379077659000</creationDate>
-  <date>1379077659000</date>
-  <contentUpdateDate>1379077659000</contentUpdateDate>
+  <creationDate>1378792901000</creationDate>
+  <date>1379062667000</date>
+  <contentUpdateDate>1379058171000</contentUpdateDate>
   <version>1.1</version>
   <title>XWiki Enterprise Section</title>
   <defaultTemplate/>
@@ -1485,9 +1485,14 @@ AdAinjWA1jQFADs=
       <code>.slide-picture .screenshots {
   background-image: url("$doc.getAttachmentURL('screenshots.png')");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: 50% 50%;
   height: 22em;
   position: relative;
+}
+
+.slide-picture .screenshots p {
+  margin: 0;
 }
 
 .slide-picture .downloadButton {
@@ -1498,21 +1503,23 @@ AdAinjWA1jQFADs=
   position: absolute;
 }
 
-.slide-lists h2 {
-  margin: 5% 0 0;
-}
-
 .slide-lists ul {
   font-size: .85em;
   margin: 0;
+}
+
+.slide-lists ul ul {
+  font-size: 1em;
 }
 
 .slide-lists ul li {
   list-style-image: url("$doc.getAttachmentURL('tick.gif')");
 }
 
-.slide-lists .column {
-  width: 48.75%;
+@media (max-width: 480px) {
+  .list-features, .list-usages {
+    display: none;
+  }
 }</code>
     </property>
     <property>
@@ -1564,40 +1571,42 @@ AdAinjWA1jQFADs=
 $xwiki.ssx.use("$doc.fullName")##
 {{/velocity}}
 
+{{comment}}
 {{cache id='section1Cache4' timeToLive='2629743'}}
-(% class='wrap slide' %)(((
-(% class='slide-text' %)(((
+{{/comment}}
+(% class='slide row' %)(((
+(% class='slide-text col-xs-12 col-sm-8' %)(((
 = XWiki Enterprise =
 
 ==[[XWiki Enterprise&gt;&gt;enterprise:Main.WebHome]] is a professional wiki that has powerful extensibility features such as scripting in pages, plugins and a highly modular architecture. ==
 
-(% class='slide-lists' %)(((
-{{container layoutStyle='columns'}}
+(% class='slide-lists row' %)(((
+(% class='list-features col-xs-6' %)
 (((
 == Features ==
 * a very robust [[WYSIWYG editor&gt;&gt;platform:Features.WysiwygEditor]]
 * a powerful [[wiki syntax&gt;&gt;platform:Main.XWikiSyntax]]
 * strong [[rights management&gt;&gt;platform:Features.RightsManagement]]
+(%class='hidden-xs hidden-sm hidden-md'%)(((* [[Full Skinning&gt;&gt;platform:Features.Skins]])))
+(%class='hidden-xs'%)(((* [[PDF export&gt;&gt;platform:AdminGuide.Configuration||anchor='HCustomizingthePDFexportLook26Feel']])))
 * [[LDAP authentication&gt;&gt;platform:AdminGuide.Authentication]]
-* [[PDF export&gt;&gt;platform:AdminGuide.Configuration||anchor='HCustomizingthePDFexportLook26Feel']]
-* [[Full Skinning&gt;&gt;platform:Features.Skins]]
 {{html}}&amp;hellip;{{/html}} and [[many more&gt;&gt;enterprise:Main.Features]].
 )))
+(% class='list-usages col-xs-6' %)
 (((
 == What can I use it for? ==
 * Intranets
 * Public web sites
-* Knowledge managements
-* Simple CMS needs
+* Knowledge management
+(%class='hidden-xs hidden-sm hidden-md'%)((( * Simple CMS needs)))
+(%class='hidden-xs'%)(((* Portal with external mixed data)))
 * Project collaboration
-* Portal with external mixed data
-* and [[more{{html}}&amp;hellip;{{/html}}&gt;&gt;xwiki:References.WebHome]]
+{{html}}&amp;hellip;{{/html}} and [[more{{html}}&amp;hellip;{{/html}}&gt;&gt;xwiki:References.WebHome]]
 )))
-{{/container}}
 )))
 )))
 
-(% class='slide-picture' %)(((
+(% class='slide-picture hidden-xs col-sm-4' %)(((
 (% class='screenshots' %)(((
 {{velocity}}
 [[Download (% class="name" %)XWiki(%%)&gt;&gt;#if (!$xwiki.exists('Main.Download'))enterprise:#{end}Main.Download||class="downloadButton enterprise" title="Download XWiki"]]
@@ -1605,8 +1614,9 @@ $xwiki.ssx.use("$doc.fullName")##
 )))
 )))
 
-(% class='clearfloats' %)((()))
 )))
 
-(% class='clearfloats' %)((()))</content>
+{{comment}}
+{{/cache}}
+{{/comment}}</content>
 </xwikidoc>
