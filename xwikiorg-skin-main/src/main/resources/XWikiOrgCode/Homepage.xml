@@ -11,9 +11,9 @@
   <author>xwiki:XWiki.Admin</author>
   <customClass/>
   <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
-  <creationDate>1379081432000</creationDate>
-  <date>1379081432000</date>
-  <contentUpdateDate>1379081432000</contentUpdateDate>
+  <creationDate>1378974629000</creationDate>
+  <date>1380279387000</date>
+  <contentUpdateDate>1379081407000</contentUpdateDate>
   <version>1.1</version>
   <title>Homepage</title>
   <defaultTemplate/>
@@ -432,10 +432,6 @@ VAiZY/z//z8DAwMDAzMjI6ODg4PDAwA0hATl5emWqQAAAABJRU5ErkJggg==
   background-image: url("$doc.getAttachmentURL('bg.png')");
   box-shadow: 0 2px 5px #dedede;
   text-shadow: 0 1px 0 #fff;
-}
-
-#body {
-  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
